@@ -1,0 +1,88 @@
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+.edit-post-toggle-publish-panel {
+  display: none; }
+
+.nux-dot-tip.is-middle.is-right {
+  display: none; }
+
+.edit-post-more-menu .components-button svg {
+  transform: rotate(0deg); }
+
+.gutenberg-editor-wrapper {
+  min-width: 800px; }
+.gutenberg-editor-wrapper-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #000; }
+.gutenberg-editor-wrapper > .edit-post-header {
+  left: 0;
+  top: 0;
+  z-index: 100;
+  outline: none; }
+
+.block-editor-block-mover__control {
+  padding: 0; }
+
+*[tabindex]:focus {
+  outline: 0; }
+
+.screen-reader-text {
+  display: none; }
+
+@media (min-width: 782px) {
+  .gutenberg__editor,
+  .gutenberg__editor .components-navigate-regions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .gutenberg__editor .editor-post-saved-state {
+    visibility: visible; }
+  .gutenberg__editor .edit-post-layout .edit-post-sidebar,
+  .gutenberg__editor .edit-post-layout .edit-post-layout__content {
+    position: absolute; }
+  .gutenberg__editor .edit-post-layout .edit-post-header {
+    display: none; }
+  .gutenberg__editor .edit-post-layout .edit-post-header.gutenberg-editor-header {
+    display: block; }
+  .gutenberg__editor .edit-post-layout .edit-post-layout__content {
+    margin: 0;
+    top: 56px;
+    left: 0;
+    right: 0;
+    overflow-y: auto; }
+  .gutenberg__editor .edit-post-layout .edit-post-layout__content ul,
+  .gutenberg__editor .edit-post-layout .edit-post-layout__content ol {
+    padding-left: 10px; }
+  .gutenberg__editor .edit-post-layout .edit-post-layout__content ul {
+    list-style: circle; }
+  .gutenberg__editor .edit-post-layout .edit-post-sidebar {
+    width: 280px;
+    top: 56px; }
+  .gutenberg__editor .edit-post-layout .edit-post-sidebar ul,
+  .gutenberg__editor .edit-post-layout .edit-post-sidebar li {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .gutenberg__editor .edit-post-layout.is-sidebar-opened .edit-post-layout__content {
+    right: 280px; } }
+
+.is-style-tss-paragraph {
+  background: red; }

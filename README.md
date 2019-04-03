@@ -1,6 +1,10 @@
 Wordpress-gutenberg editor just run by JavaScript
 
-(Demo)[]
+## run in local
+```bash
+npm install
+npm run dev
+```
 
 ### record changes from 'gutenberg-js'
 

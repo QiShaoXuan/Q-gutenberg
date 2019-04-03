@@ -18,16 +18,16 @@
 //@import "./packages/editor-style.css";
 //@import "./packages/edit-post-style.css";
 
-@import "./packages/block-editor-style.css";
-@import "./packages/block-library-editor.css";
-@import "./packages/block-library-style.css";
-@import "./packages/block-library-theme.css";
-@import "./packages/components-style.css";
-@import "./packages/edit-post-style.css";
-@import "./packages/editor-editor-styles.css";
-@import "./packages/editor-style.css";
-@import "./packages/format-library-style.css";
-@import "./packages/nux-style.css";
+@import "packages/block-editor-style";
+@import "packages/block-library-editor";
+@import "packages/block-library-style";
+@import "packages/block-library-theme";
+@import "packages/components-style";
+@import "packages/edit-post-style";
+@import "packages/editor-editor-styles";
+@import "packages/editor-style";
+@import "packages/format-library-style";
+@import "packages/nux-style";
 //@import 'gutenberg-theme';
 //@import 'admin';
 @import 'fix';
