@@ -1,60 +1,23 @@
-# gutenberg-js
-> JavaScript only version of the WordPress Gutenberg editor.
+Wordpress-gutenberg editor just run by JavaScript
 
-## dist:
-~~~
-.
-├── gutenberg.css
-├── gutenberg.js
-└── index.html
-~~~
+(Demo)[]
 
+### record changes from 'gutenberg-js'
 
-## install:
-```shell
-# add this to package.json:
-"gutenberg-js": "git+ssh://git@gitlab.finxos.com:tu-editor/gutenberg-js.git",
+#### override scss variables
 
-# then: 
-npm install
-```
+1. `npm i chalk mkdirp node-sass postcss deasync @wordpress/postcss-themes rtlcss -D`
+2. add `"build-scss": "node ./build/packages/build.js"` in `package.json`
+3. `npm run build-scss`
 
-## usage:
-> Only demo version.
+scss variables is in `/src/overrides/stylesheets`, it will build all scss file in gutenberg into `styles/packages`
 
-1. html import some global script:
-    
-    ```html
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.4/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.4/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    ```
+#### i18n
 
-2. import JS file
+1. `npm run build` or `npm run dev`
+2. find the `gutenberg.pot` in `./languages`, and put it in `/i18n/translate`
+3. translate in `/i18n`
+4. put the translated json to `/src/i18n`
 
-    ```js
-    import GutenbergEditor from 'gutenberg-js';
-    ```
-
-3. import css
-
-    ```scss
-    @import '~gutenberg-js/dist/gutenberg.css';
-    ```
-
-4. YOUR JSX:
-    > Your container is `postion:relative;`
-    
-    ```js
-    
-    class App extends React.Component(){
-      render(){
-        return (
-          <div className="rel container">
-            <GutenbergEditor />
-          </div>
-        )
-      }
-    }
-    ```
+TODO:
+- some word has not translate, may cause the js load, must not json file

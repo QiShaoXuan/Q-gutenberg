@@ -10675,7 +10675,10 @@ body {
   margin: 0; }
 
 .edit-post-toggle-publish-panel {
-  top: -10px; }
+  display: none; }
+
+.nux-dot-tip.is-middle.is-right {
+  display: none; }
 
 .edit-post-more-menu .components-button svg {
   transform: rotate(0deg); }
