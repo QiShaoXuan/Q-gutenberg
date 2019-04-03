@@ -1,0 +1,3629 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"X-Generator: babel-plugin-makepot\n"
+
+#: node_modules/@wordpress/api-fetch/build-module/index.js:111
+msgid "An unknown error occurred."
+msgstr ""
+
+#: node_modules/@wordpress/api-fetch/build-module/index.js:99
+msgid "The response is not a valid JSON response."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/alignment-toolbar/index.js:24
+msgid "Align text left"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/alignment-toolbar/index.js:28
+msgid "Align text center"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/alignment-toolbar/index.js:32
+msgid "Align text right"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/alignment-toolbar/index.js:54
+msgid "Change Text Alignment"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-alignment-toolbar/index.js:20
+msgid "Align left"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-alignment-toolbar/index.js:24
+msgid "Align center"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-alignment-toolbar/index.js:28
+msgid "Align right"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-alignment-toolbar/index.js:32
+msgid "Wide width"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-alignment-toolbar/index.js:36
+msgid "Full width"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-alignment-toolbar/index.js:63
+msgid "Change Alignment"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-compare/index.js:100
+msgid "After Conversion"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-compare/index.js:93
+msgid "Current"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-compare/index.js:96
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:103
+msgid "Convert to HTML"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-inspector/index.js:47
+msgid "No block selected."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-inspector/index.js:62
+msgid "Styles"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-inspector/index.js:69
+msgid "Advanced"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list-appender/index.js:51
+#: node_modules/@wordpress/block-editor/build-module/components/default-block-appender/index.js:69
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/index.js:29
+msgid "Add block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-contextual-toolbar.js:21
+msgid "Block tools"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-crash-warning.js:12
+msgid "This block has encountered an error and cannot be previewed."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:105
+msgid "This block contains unexpected or invalid content."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:69
+msgid "Convert to Classic Block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:72
+msgid "Attempt Block Recovery"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:79
+#. Dialog title to fix block content
+msgid "Resolve Block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:87
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-convert-button.js:17
+msgid "Convert to Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block.js:424
+msgid "Block: %s"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/index.js:101
+msgid "Move up"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/index.js:118
+msgid "Move down"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:29
+#. %s: Type of block (i.e. Text, Image etc)
+msgid "Block %s is the only block, and cannot be moved"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:35
+#. 1: Type of block (i.e. Text, Image etc), 2: Position of selected block, 3: New position
+msgid "Move %1$s block from position %2$d down to position %3$d"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:41
+#. %s: Type of block (i.e. Text, Image etc)
+msgid "Block %s is at the end of the content and can’t be moved down"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:47
+#. 1: Type of block (i.e. Text, Image etc), 2: Position of selected block, 3: New position
+msgid "Move %1$s block from position %2$d up to position %3$d"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:53
+#. %s: Type of block (i.e. Text, Image etc)
+msgid "Block %s is at the beginning of the content and can’t be moved up"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:73
+msgid "Blocks cannot be moved up as they are already at the top"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:77
+msgid "Blocks cannot be moved down as they are already at the bottom"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:82
+#. 1: Number of selected blocks, 2: Position of selected blocks
+msgid "Move %1$d block from position %2$d up by one place"
+msgid_plural "Move %1$d blocks from position %2$d up by one place"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js:87
+#. 1: Number of selected blocks, 2: Position of selected blocks
+msgid "Move %1$d block from position %2$d down by one place"
+msgid_plural "Move %1$d blocks from position %2$d down by one place"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-navigation/dropdown.js:41
+#: node_modules/@wordpress/block-editor/build-module/components/block-navigation/index.js:85
+msgid "Block Navigation"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-navigation/index.js:57
+msgid "(selected block)"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-preview/index.js:32
+#: node_modules/@wordpress/block-library/build-module/html/edit.js:84
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:119
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-link/index.js:97
+msgid "Preview"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-mode-toggle.js:27
+msgid "Edit as HTML"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-mode-toggle.js:27
+msgid "Edit visually"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js:120
+msgid "Remove Block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js:53
+msgid "Hide options"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js:53
+#: node_modules/@wordpress/block-editor/build-module/components/warning/index.js:41
+msgid "More options"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js:89
+msgid "Duplicate"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js:94
+msgid "Insert Before"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js:99
+msgid "Insert After"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/reusable-block-convert-button.js:31
+msgid "Add to Reusable Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/reusable-block-convert-button.js:35
+msgid "Convert to Regular Block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/reusable-block-delete-button.js:32
+msgid "Remove from Reusable Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/reusable-block-delete-button.js:68
+msgid ""
+"Are you sure you want to delete this Reusable Block?\n"
+"\n"
+"It will be permanently removed from all posts and pages that use it."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-switcher/index.js:100
+msgid "Block icon"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-switcher/index.js:123
+msgid "Change block type or style"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-switcher/index.js:123
+msgid "Change type of %d block"
+msgid_plural "Change type of %d blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-switcher/index.js:147
+msgid "Block Styles"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-switcher/index.js:154
+msgid "Transform To:"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/color-palette/control.js:19
+msgid "(current %s: %s)"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/contrast-checker/index.js:37
+msgid ""
+"This color combination may be hard for people to read. Try using a darker "
+"background color and/or a brighter text color."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/contrast-checker/index.js:37
+msgid ""
+"This color combination may be hard for people to read. Try using a brighter "
+"background color and/or a darker text color."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/default-block-appender/index.js:37
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:247
+msgid "Start writing or type / to choose a block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter-with-shortcuts/index.js:44
+msgid "Add %s"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:263
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:353
+msgid "%d result found."
+msgid_plural "%d results found."
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:312
+#: node_modules/@wordpress/edit-post/build-module/components/manage-blocks-modal/manager.js:38
+msgid "Search for a block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:321
+#: node_modules/@wordpress/edit-post/build-module/components/manage-blocks-modal/manager.js:49
+msgid "Available block types"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:357
+msgid "Reusable"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:371
+#: node_modules/@wordpress/edit-post/build-module/plugins/index.js:30
+msgid "Manage All Reusable Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:373
+#: node_modules/@wordpress/edit-post/build-module/components/manage-blocks-modal/manager.js:53
+msgid "No blocks found."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:197
+msgid "To edit this block, you need permission to upload media."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:208
+msgid "Drag a media file, upload a new one or select a file from your library."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:211
+msgid "Drag an audio, upload a new one or select a file from your library."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:213
+msgid "Drag an image, upload a new one or select a file from your library."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:215
+msgid "Drag a video, upload a new one or select a file from your library."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:218
+msgid "Given your current role, you can only link a media file, you cannot upload."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:221
+msgid "Given your current role, you can only link an audio, you cannot upload."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:223
+msgid "Given your current role, you can only link an image, you cannot upload."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:225
+msgid "Given your current role, you can only link a video, you cannot upload."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:231
+msgid "Media"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:234
+#: node_modules/@wordpress/block-library/build-module/audio/index.js:18
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:46
+msgid "Audio"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:236
+#: node_modules/@wordpress/block-library/build-module/image/index.js:139
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:31
+#: node_modules/@wordpress/format-library/build-module/image/index.js:28
+msgid "Image"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:238
+#: node_modules/@wordpress/block-library/build-module/video/index.js:18
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:43
+msgid "Video"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:258
+msgid "Upload"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:270
+msgid "Media Library"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:279
+msgid "Insert from URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:45
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/index.js:293
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:22
+msgid "URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:46
+msgid "Paste or type URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js:52
+#: node_modules/@wordpress/block-library/build-module/button/edit.js:138
+#: node_modules/@wordpress/format-library/build-module/image/index.js:170
+#: node_modules/@wordpress/format-library/build-module/link/inline.js:58
+msgid "Apply"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/multi-selection-inspector/index.js:36
+#. %d: number of blocks
+msgid "%d block"
+msgid_plural "%d blocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/multi-selection-inspector/index.js:40
+#. %d: number of words
+msgid "%d word"
+msgid_plural "%d words"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/panel-color-settings/index.js:55
+msgid "(%s: %s)"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/format-toolbar/index.js:30
+msgid "More Rich Text Controls"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/list-edit.js:122
+msgid "Convert to unordered list"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/list-edit.js:135
+msgid "Convert to ordered list"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/list-edit.js:148
+msgid "Outdent list item"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/list-edit.js:155
+msgid "Indent list item"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/skip-to-selected-block/index.js:28
+msgid "Skip to the selected block"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/button.js:65
+msgid "Edit Link"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/button.js:65
+msgid "Insert Link"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/button.js:83
+#: node_modules/@wordpress/components/build-module/date-time/index.js:95
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/index.js:84
+#: node_modules/@wordpress/edit-post/build-module/components/manage-blocks-modal/index.js:33
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:36
+msgid "Close"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/button.js:90
+msgid "Submit"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/index.js:137
+#: node_modules/@wordpress/components/build-module/autocomplete/index.js:287
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:257
+msgid "%d result found, use up and down arrow keys to navigate."
+msgid_plural "%d results found, use up and down arrow keys to navigate."
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/index.js:139
+#: node_modules/@wordpress/components/build-module/autocomplete/index.js:289
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:259
+msgid "No results."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/index.js:236
+msgid "Link selected."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/index.js:298
+msgid "Paste URL or type to search"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-input/index.js:329
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/sidebar-header/index.js:32
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:98
+msgid "(no title)"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/url-popover/index.js:66
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:568
+msgid "Link Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/hooks/anchor.js:68
+msgid "HTML Anchor"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/hooks/anchor.js:69
+msgid "Anchors lets you link directly to a section on a page."
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/hooks/custom-class-name.js:59
+msgid "Additional CSS Class"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:102
+msgid "Medium"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:105
+msgid "Large"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:108
+msgid "Full Size"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:32
+msgid "Pale pink"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:36
+msgid "Vivid red"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:40
+msgid "Luminous vivid orange"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:44
+msgid "Luminous vivid amber"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:48
+msgid "Light green cyan"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:52
+msgid "Vivid green cyan"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:56
+msgid "Pale cyan blue"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:60
+msgid "Vivid cyan blue"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:64
+msgid "Very light gray"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:68
+msgid "Cyan bluish gray"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:72
+msgid "Very dark gray"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:99
+msgid "Thumbnail"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/effects.js:98
+msgid "%s block selected."
+msgid_plural "%s blocks selected."
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/block-library/build-module/archives/edit.js:18
+msgid "Archives Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/archives/edit.js:20
+#: node_modules/@wordpress/block-library/build-module/categories/edit.js:192
+msgid "Display as Dropdown"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/archives/edit.js:28
+#: node_modules/@wordpress/block-library/build-module/categories/edit.js:200
+msgid "Show Post Counts"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/archives/index.js:15
+msgid "Archives"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/archives/index.js:16
+msgid "Display a monthly archive of your posts."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:211
+msgid "Edit audio"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:215
+msgid "Audio Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:217
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:238
+msgid "Autoplay"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:221
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:242
+msgid "Loop"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:225
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:254
+msgid "Preload"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:235
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:263
+msgid "Auto"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:238
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:266
+msgid "Metadata"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:241
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:41
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:385
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:269
+msgid "None"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/edit.js:250
+#: node_modules/@wordpress/block-library/build-module/embed/embed-preview.js:132
+#: node_modules/@wordpress/block-library/build-module/gallery/gallery-image.js:173
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:715
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:299
+msgid "Write caption…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/audio/index.js:19
+msgid "Embed a simple audio player."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/edit-panel/index.js:103
+msgid "Name:"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/edit-panel/index.js:118
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/editor.js:98
+msgid "Save"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/edit-panel/index.js:97
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:116
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/index.js:148
+#: node_modules/@wordpress/format-library/build-module/link/inline.js:98
+msgid "Edit"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/edit.js:155
+msgid "Block has been deleted or is unavailable."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/index.js:12
+msgid "Reusable Block"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/index.js:14
+msgid ""
+"Create content, and save it for you and other contributors to reuse across "
+"your site. Update the block, and the changes apply everywhere it’s used."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/block/indicator/index.js:12
+#. %s: title/name of the reusable block
+msgid "Reusable Block: %s"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/edit.js:104
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:208
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:201
+#: node_modules/@wordpress/block-library/build-module/pullquote/edit.js:119
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:493
+msgid "Color Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/edit.js:108
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:163
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:206
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:498
+msgid "Background Color"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/edit.js:112
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:210
+#: node_modules/@wordpress/block-library/build-module/pullquote/edit.js:127
+msgid "Text Color"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/edit.js:87
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:243
+msgid "Add text…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/index.js:63
+msgid "Button"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/index.js:64
+msgid "Prompt visitors to take action with a button-style link."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/index.js:75
+msgid "link"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/index.js:87
+msgid "Outline"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/calendar/index.js:12
+msgid "Calendar"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/calendar/index.js:13
+msgid "A calendar of your site’s posts."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/calendar/index.js:16
+msgid "posts"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/calendar/index.js:16
+msgid "archive"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/categories/edit.js:101
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:207
+msgid "(Untitled)"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/categories/edit.js:190
+msgid "Categories Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/categories/edit.js:196
+msgid "Show Hierarchy"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/categories/edit.js:208
+#: node_modules/@wordpress/block-library/build-module/categories/index.js:15
+msgid "Categories"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/categories/index.js:16
+msgid "Display a list of all categories."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/classic/edit.js:174
+msgid "Insert Media"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/classic/edit.js:227
+msgid "Classic"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/classic/index.js:17
+msgid "Use the classic WordPress editor."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/code/edit.js:25
+msgid "Write code…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/code/edit.js:26
+#: node_modules/@wordpress/block-library/build-module/code/index.js:16
+#: node_modules/@wordpress/format-library/build-module/code/index.js:33
+msgid "Code"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/code/index.js:17
+msgid "Display code snippets that respect your spacing and tabs."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/columns/column.js:11
+msgid "Column"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/columns/column.js:22
+msgid "A single column within a columns block."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/columns/index.js:109
+msgid ""
+"Add a block that displays content in multiple columns, then add whatever "
+"content blocks you’d like."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/columns/index.js:176
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:278
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:141
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:165
+#: node_modules/@wordpress/block-library/build-module/text-columns/index.js:100
+msgid "Columns"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:172
+#: node_modules/@wordpress/block-library/build-module/media-text/media-container.js:51
+msgid "Edit media"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:178
+msgid "Cover Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:180
+msgid "Fixed Background"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:184
+msgid "Focal Point Picker"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:193
+msgid "Overlay"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:198
+msgid "Overlay Color"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:201
+msgid "Background Opacity"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:215
+#: node_modules/@wordpress/block-library/build-module/cover/index.js:54
+msgid "Cover"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:222
+msgid ""
+"Drag an image or a video, upload a new one or select a file from your "
+"library."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/edit.js:40
+#: node_modules/@wordpress/block-library/build-module/cover/index.js:236
+msgid "Write title…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/cover/index.js:55
+msgid "Add an image or video with a text overlay — great for headers."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:105
+msgid "Embed Cloudup content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:113
+msgid "Embed CollegeHumor content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:131
+msgid "Embed Crowdsignal (formerly Polldaddy) content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:139
+msgid "Embed a Dailymotion video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:147
+msgid "Embed Hulu content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:155
+msgid "Embed Imgur content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:163
+msgid "Embed Issuu content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:17
+msgid "Embed a tweet."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:171
+msgid "Embed Kickstarter content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:179
+msgid "Embed Meetup.com content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:187
+msgid "music"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:187
+msgid "audio"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:188
+msgid "Embed Mixcloud content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:197
+msgid "Embed Polldaddy content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:208
+msgid "Embed a Reddit thread."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:216
+msgid "Embed ReverbNation content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:224
+msgid "Embed Screencast content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:232
+msgid "Embed Scribd content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:240
+msgid "Embed Slideshare content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:248
+msgid "Embed SmugMug content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:26
+msgid "Embed a YouTube video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:276
+msgid "Embed Speaker Deck content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:284
+msgid "Embed a TED video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:292
+msgid "Embed a Tumblr post."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:300
+#: node_modules/@wordpress/block-library/build-module/media-text/index.js:72
+msgid "video"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:301
+msgid "Embed a VideoPress video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:309
+msgid "Embed a WordPress.tv video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:317
+msgid "ebook"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:319
+msgid "Embed Amazon Kindle content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:34
+msgid "Embed a Facebook post."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:43
+msgid "Embed an Instagram post."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:51
+msgid "post"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:51
+msgid "blog"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:53
+msgid "Embed a WordPress post."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:61
+msgid "Embed SoundCloud content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:70
+msgid "Embed Spotify content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:78
+#: node_modules/@wordpress/block-library/build-module/media-text/index.js:72
+msgid "image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:79
+msgid "Embed Flickr content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:88
+msgid "Embed a Vimeo video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/core-embeds.js:97
+msgid "Embed an Animoto video."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/edit.js:162
+msgid "This embed will preserve its aspect ratio when the browser is resized."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/edit.js:162
+msgid "This embed may not preserve its aspect ratio when the browser is resized."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/edit.js:204
+msgid "%s URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-controls.js:21
+msgid "Edit URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-controls.js:25
+msgid "Media Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-controls.js:28
+msgid "Resize for smaller devices"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-loading.js:12
+msgid "Embedding…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-placeholder.js:33
+msgid "Enter URL to embed here…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-placeholder.js:40
+msgid "Sorry, this content could not be embedded."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-preview.js:130
+#. %s: host providing embed content e.g: www.youtube.com
+msgid "Embedded content from %s can't be previewed in the editor."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-preview.js:85
+msgid "Embedded content from %s"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/index.js:18
+msgid ""
+"Embed videos, images, tweets, audio, and other content from external "
+"sources."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/settings.js:56
+msgid ""
+"Add a block that displays content pulled from other sites, like Twitter, "
+"Instagram or YouTube."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:179
+#: node_modules/@wordpress/block-library/build-module/file/index.js:24
+msgid "File"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:180
+msgid "Drag a file, upload a new one or select a file from your library."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:211
+msgid "Edit file"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:225
+msgid "Write file name…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:257
+#: node_modules/@wordpress/edit-post/build-module/plugins/copy-content-menu-item/index.js:28
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:117
+msgid "Copied!"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/edit.js:257
+msgid "Copy URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/index.js:25
+msgid "Add a link to a downloadable file."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/index.js:28
+msgid "document"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/index.js:28
+msgid "pdf"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:28
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:38
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:388
+msgid "Media File"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:31
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:35
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:391
+msgid "Attachment Page"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:36
+msgid "Text Link Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:38
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:290
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:570
+msgid "Link To"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:43
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:581
+#: node_modules/@wordpress/format-library/build-module/link/inline.js:267
+msgid "Open in New Tab"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:47
+msgid "Download Button Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/inspector.js:49
+msgid "Show Download Button"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:164
+msgid "Thumbnails are cropped to align."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:164
+msgid "Thumbnails are not cropped."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:249
+msgid "Edit gallery"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:263
+#: node_modules/@wordpress/block-library/build-module/gallery/index.js:87
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:25
+msgid "Gallery"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:264
+msgid "Drag images, upload new ones or select files from your library."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:276
+msgid "Gallery Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:285
+msgid "Crop Images"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:298
+#. %1$d is the order number of the image, %2$d is the total number of images.
+msgid "image %1$d of %2$d in gallery"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/edit.js:324
+msgid "Upload an image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/gallery-image.js:168
+msgid "Remove Image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/index.js:88
+msgid "Display multiple images in a rich gallery."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/index.js:91
+msgid "images"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/gallery/index.js:91
+msgid "photos"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/edit.js:38
+msgid "Heading Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/edit.js:39
+msgid "Level"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/edit.js:48
+msgid "Text Alignment"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/edit.js:86
+msgid "Write heading…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/heading-toolbar.js:37
+#. %s: heading level e.g: "1", "2", "3"
+msgid "Heading %d"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/index.js:58
+msgid "Heading"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/index.js:59
+msgid ""
+"Introduce new sections and organize content to help visitors (and search "
+"engines) understand the structure of your content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/index.js:70
+msgid "title"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/heading/index.js:70
+msgid "subtitle"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/html/edit.js:95
+msgid "Write HTML…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/html/edit.js:96
+msgid "HTML"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/html/index.js:17
+msgid "Custom HTML"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/html/index.js:18
+msgid "Add custom HTML code and preview it as you edit."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/html/index.js:26
+msgid "embed"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:394
+msgid "Custom URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:473
+msgid "Edit image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:518
+msgid "Image Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:520
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:202
+msgid "Alt Text (Alternative Text)"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:523
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:205
+msgid ""
+"Alternative text describes your image to people who can’t see it. Add a "
+"short description with its key details."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:533
+msgid "Image Dimensions"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:538
+#: node_modules/@wordpress/format-library/build-module/image/index.js:164
+msgid "Width"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:545
+msgid "Height"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:552
+msgid "Image Size"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:567
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:115
+#: node_modules/@wordpress/components/build-module/range-control/index.js:103
+msgid "Reset"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:575
+msgid "Link URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:585
+msgid "Link CSS Class"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:589
+msgid "Link Rel"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:616
+msgid "This image has an empty alt attribute; its file name is %s"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/edit.js:618
+msgid "This image has an empty alt attribute"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/index.js:140
+msgid "Insert an image to make a visual statement."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/image/index.js:144
+#: node_modules/@wordpress/format-library/build-module/image/index.js:29
+msgid "photo"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/edit.js:81
+msgid "Latest Comments Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/edit.js:83
+msgid "Display Avatar"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/edit.js:87
+msgid "Display Date"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/edit.js:91
+msgid "Display Excerpt"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/edit.js:95
+msgid "Number of Comments"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/index.js:15
+msgid "Latest Comments"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/index.js:16
+msgid "Display a list of your most recent comments."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-comments/index.js:27
+msgid "recent comments"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:108
+msgid "Latest Posts Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:137
+msgid "Display post date"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:157
+#: node_modules/@wordpress/block-library/build-module/latest-posts/index.js:15
+msgid "Latest Posts"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:158
+msgid "No posts found."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:165
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:109
+msgid "List View"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/edit.js:174
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:118
+msgid "Grid View"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/index.js:16
+msgid "Display a list of your most recent posts."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/latest-posts/index.js:57
+msgid "recent posts"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/WidgetEditHandler.js:79
+msgid "Not a valid widget."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:111
+msgid "Change widget"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:67
+msgid "You don't have permissions to use widgets on this site."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:69
+msgid "There are no widgets available."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:72
+msgid "Select a legacy widget to display:"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/edit.js:97
+msgid "Legacy Widget"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/index.js:15
+msgid "Legacy Widget (Experimental)"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/legacy-widget/index.js:16
+msgid "Display a legacy widget."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/list/index.js:238
+msgid "Write list…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/list/index.js:55
+msgid "List"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/list/index.js:56
+msgid "Create a bulleted or numbered list."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/list/index.js:64
+msgid "bullet list"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/list/index.js:64
+msgid "ordered list"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/list/index.js:64
+msgid "numbered list"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:167
+msgid "Show media on left"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:176
+msgid "Show media on right"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:192
+msgid "Media & Text Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:194
+msgid "Stack on mobile"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/index.js:68
+msgid "Media & Text"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/index.js:69
+msgid "Set media and words side-by-side for a richer layout."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/media-container.js:96
+msgid "Media area"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/missing/index.js:24
+msgid ""
+"Your site doesn’t include support for the \"%s\" block. You can leave this "
+"block intact, convert its content to a Custom HTML block, or remove it "
+"entirely."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/missing/index.js:30
+msgid "Keep as HTML"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/missing/index.js:32
+msgid ""
+"Your site doesn’t include support for the \"%s\" block. You can leave this "
+"block intact or remove it entirely."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/missing/index.js:59
+msgid "Unrecognized Block"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/missing/index.js:60
+msgid "Your site doesn’t include support for this block."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/more/edit.js:33
+msgid "Read more"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/more/edit.js:63
+msgid "The excerpt is hidden."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/more/edit.js:63
+msgid "The excerpt is visible."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/more/edit.js:83
+msgid "Hide the excerpt on the full content page"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/more/index.js:23
+msgid ""
+"Content before this block will be shown in the excerpt on your archives "
+"page."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/nextpage/edit.js:10
+msgid "Page break"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/nextpage/index.js:17
+msgid "Page Break"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/nextpage/index.js:18
+msgid "Separate your content into a multi-page experience."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/nextpage/index.js:26
+msgid "next page"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/nextpage/index.js:26
+msgid "pagination"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:189
+msgid "Text Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:196
+msgid "Drop Cap"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:246
+msgid "Paragraph block"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:246
+msgid "Empty block; start writing or type forward slash to choose a block"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:88
+msgid "Showing large initial letter."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:88
+msgid "Toggle to show a large initial letter."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/index.js:69
+msgid "Paragraph"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/index.js:70
+msgid "Start with the building block of all narrative."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/index.js:78
+msgid "text"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/preformatted/index.js:12
+msgid "Preformatted"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/preformatted/index.js:13
+msgid "Add text that respects your spacing and tabs, and also allows styling."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/preformatted/index.js:95
+msgid "Write preformatted text…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/pullquote/edit.js:106
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:275
+#. placeholder text used for the quote
+msgid "Write quote…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/pullquote/edit.js:111
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:285
+#. placeholder text used for the citation
+msgid "Write citation…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/pullquote/edit.js:123
+msgid "Main Color"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/pullquote/index.js:51
+msgid "Pullquote"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/pullquote/index.js:52
+msgid "Give special visual emphasis to a quote from your text."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/pullquote/index.js:74
+msgid "Solid Color"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:42
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:34
+msgid "Quote"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:43
+msgid ""
+"Give quoted text visual emphasis. \"In quoting others, we cite ourselves.\" "
+"— Julio Cortázar"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:54
+msgid "blockquote"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:101
+msgid "Edit RSS URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:129
+msgid "RSS Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:131
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:72
+msgid "Number of items"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:142
+msgid "Display author"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:146
+msgid "Display date"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:150
+msgid "Display excerpt"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:154
+msgid "Max number of words in excerpt"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:85
+msgid "Enter URL here…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/edit.js:96
+msgid "Use URL"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/index.js:12
+msgid "RSS"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/index.js:13
+msgid "Display entries from any RSS or Atom feed."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/index.js:16
+msgid "atom"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/rss/index.js:16
+msgid "feed"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/edit.js:19
+msgid "Label text"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/edit.js:20
+msgid "Add label…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/edit.js:31
+msgid "Optional placeholder text"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/edit.js:35
+msgid "Optional placeholder…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/edit.js:45
+msgid "Button text"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/edit.js:46
+msgid "Add button text…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/index.js:12
+msgid "Search"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/index.js:13
+msgid "Help visitors find your content."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/search/index.js:16
+msgid "find"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:11
+msgid "Separator"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:12
+msgid "Create a break between ideas or sections with a horizontal separator."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:23
+msgid "horizontal-line"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:23
+msgid "divider"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:26
+msgid "Default"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:30
+msgid "Wide Line"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/separator/index.js:33
+msgid "Dots"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/shortcode/index.js:15
+msgid "Insert additional custom elements with a WordPress shortcode."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/shortcode/index.js:68
+msgid "Shortcode"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/shortcode/index.js:72
+msgid "Write shortcode here…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/spacer/index.js:18
+msgid "Spacer"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/spacer/index.js:19
+msgid "Add white space between blocks and customize its height."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/spacer/index.js:69
+msgid "Spacer Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/spacer/index.js:71
+msgid "Height in pixels"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/subhead/index.js:14
+msgid "Subheading (deprecated)"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/subhead/index.js:15
+msgid "This block is deprecated. Please use the Paragraph block instead."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/subhead/index.js:77
+msgid "Write subheading…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:345
+msgid "Add Row Before"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:350
+msgid "Add Row After"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:355
+msgid "Delete Row"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:360
+msgid "Add Column Before"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:365
+msgid "Add Column After"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:370
+msgid "Delete Column"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:461
+msgid "Column Count"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:467
+msgid "Row Count"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:474
+msgid "Create"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:483
+msgid "Edit table"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:486
+msgid "Table Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/edit.js:489
+msgid "Fixed width table cells"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/index.js:114
+msgid "Stripes"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/index.js:84
+msgid "Table"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/table/index.js:85
+msgid "Insert a table — perfect for sharing charts and data."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/tag-cloud/edit.js:48
+msgid "- Select -"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/tag-cloud/edit.js:86
+msgid "Tag Cloud Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/tag-cloud/edit.js:88
+msgid "Taxonomy"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/tag-cloud/edit.js:93
+msgid "Show post counts"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/tag-cloud/index.js:12
+msgid "Tag Cloud"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/tag-cloud/index.js:13
+msgid "A cloud of your most used tags."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/template/index.js:11
+msgid "Reusable Template"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/template/index.js:13
+msgid "Template block used as a container."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/text-columns/index.js:126
+msgid "New Column"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/text-columns/index.js:24
+msgid "Text Columns (deprecated)"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/text-columns/index.js:25
+msgid "This block is deprecated. Please use the Columns block instead."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/verse/index.js:13
+msgid "Verse"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/verse/index.js:14
+msgid "Insert poetry. Use special spacing formats. Or quote song lyrics."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/verse/index.js:25
+msgid "poetry"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/verse/index.js:78
+msgid "Write…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:232
+msgid "Edit video"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:236
+msgid "Video Settings"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:246
+msgid "Muted"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:250
+msgid "Playback Controls"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:273
+msgid "Poster Image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:284
+msgid "Select Poster Image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:284
+#: node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js:90
+msgid "Replace image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/edit.js:290
+msgid "Remove Poster Image"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/index.js:19
+msgid "Embed a video from your media library or upload a new one."
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/video/index.js:21
+msgid "movie"
+msgstr ""
+
+#: node_modules/@wordpress/blocks/build-module/store/reducer.js:21
+msgid "Common Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/blocks/build-module/store/reducer.js:24
+msgid "Formatting"
+msgstr ""
+
+#: node_modules/@wordpress/blocks/build-module/store/reducer.js:27
+msgid "Layout Elements"
+msgstr ""
+
+#: node_modules/@wordpress/blocks/build-module/store/reducer.js:30
+msgid "Widgets"
+msgstr ""
+
+#: node_modules/@wordpress/blocks/build-module/store/reducer.js:33
+msgid "Embeds"
+msgstr ""
+
+#: node_modules/@wordpress/blocks/build-module/store/reducer.js:36
+msgid "Reusable Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-palette/index.js:100
+msgid "Clear"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-palette/index.js:36
+msgid "Custom color picker"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-palette/index.js:62
+#. %s: The name of the color e.g: "vivid red".
+msgid "Color: %s"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-palette/index.js:63
+#. %s: color hex code e.g: "#f00".
+msgid "Color code: %s"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-palette/index.js:81
+msgid "Custom Color"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/alpha.js:223
+msgid "Alpha value, from 0 (transparent) to 1 (fully opaque)."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/hue.js:220
+msgid "Hue value in degrees, from 0 to 359."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/hue.js:228
+msgid "Move the arrow left or right to change hue."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:163
+msgid "Hue/saturation/lightness mode active"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:169
+msgid "Hex color mode active"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:174
+msgid "RGB mode active"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:228
+msgid "Color value in hexadecimal"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:236
+msgid "Color value in RGB"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:275
+msgid "Color value in HSL"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/inputs.js:322
+msgid "Change color format"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/saturation.js:224
+msgid "Choose a shade"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/color-picker/saturation.js:232
+msgid ""
+"Use your arrow keys to change the base color. Move up to lighten the color, "
+"down to darken, left to decrease saturation, and right to increase "
+"saturation."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:72
+msgid "Click to Select"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:72
+msgid ""
+"Click the right or left arrows to select other months in the past or the "
+"future."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:72
+msgid "Click the desired day to select it."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:72
+msgid "Navigating with a keyboard"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:76
+msgid "Select the date in focus."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:77
+msgid "Left and Right Arrows"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:80
+msgid "Move backward (left) or forward (right) by one day."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:81
+msgid "Up and Down Arrows"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:84
+msgid "Move backward (up) or forward (down) by one week."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:85
+msgid "Page Up and Page Down"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:86
+msgid "PgUp/PgDn"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:88
+msgid "Move backward (PgUp) or forward (PgDn) by one month."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:89
+msgid "Home and End"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:90
+msgid "Home/End"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:92
+msgid "Go to the first (home) or last (end) day of a week."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:99
+msgid "Calendar Help"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:293
+msgid "Month"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:300
+msgid "January"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:302
+msgid "February"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:304
+msgid "March"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:306
+msgid "April"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:308
+msgid "May"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:310
+msgid "June"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:312
+msgid "July"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:314
+msgid "August"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:316
+msgid "September"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:318
+msgid "October"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:320
+msgid "November"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:322
+msgid "December"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:331
+msgid "Day"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:363
+msgid "Date"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:368
+msgid "Year"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:377
+msgid "Time"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:382
+msgid "Hours"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:395
+msgid "Minutes"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:411
+msgid "AM"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/time.js:417
+msgid "PM"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/drop-zone/index.js:110
+msgid "Drop files to upload"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/external-link/index.js:42
+#: node_modules/@wordpress/editor/build-module/components/post-preview-button/index.js:164
+#. accessibility text
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/focal-point-picker/index.js:286
+msgid "Horizontal Pos."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/focal-point-picker/index.js:297
+msgid "Vertical Pos."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:104
+msgid "Custom font size"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:117
+msgid "Custom Size"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:56
+msgid "Font Size"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:73
+#. %s: font size name
+msgid "Font size: %s"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:588
+msgid "Add item"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:636
+msgid "Separate with commas"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:670
+msgid "Item added."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:671
+msgid "Item removed."
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/form-token-field/index.js:672
+msgid "Remove item"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/form-token-field/token.js:54
+#. 1: term name, 2: term position in a set of terms, 3: total term set count.
+msgid "%1$s (%2$s of %3$s)"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/modal/header.js:20
+msgid "Close dialog"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/notice/index.js:61
+msgid "Dismiss this notice"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:32
+msgid "Order by"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:35
+msgid "Newest to Oldest"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:38
+msgid "Oldest to Newest"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:42
+#. label for ordering posts by title in ascending order
+msgid "A → Z"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:46
+#. label for ordering posts by title in descending order
+msgid "Z → A"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:66
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:195
+msgid "Category"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/query-controls/index.js:67
+msgid "All"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/server-side-render/index.js:129
+#. %s: error message describing the problem
+msgid "Error loading block: %s"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/server-side-render/index.js:136
+msgid "No results found."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/feature-toggle/index.js:27
+msgid "Feature deactivated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/feature-toggle/index.js:29
+msgid "Feature activated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/fullscreen-mode-close/index.js:31
+msgid "Back"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/header-toolbar/index.js:26
+#. accessibility text for the editor toolbar when Top Toolbar is on
+msgid "Document and block tools"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/header-toolbar/index.js:28
+#. accessibility text for the editor toolbar when Top Toolbar is off
+msgid "Document tools"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/header-toolbar/index.js:37
+msgid ""
+"Welcome to the wonderful world of blocks! Click the “+” (“Add block”) "
+"button to add a new block. There are blocks available for all kinds of "
+"content: you can insert text, headings, images, lists, and lots more!"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/index.js:34
+msgid "Editor top bar"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/index.js:55
+#: src/overrides/header.js:60
+msgid "Settings"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/index.js:62
+msgid ""
+"You’ll find more settings for your page and blocks in the sidebar. Click "
+"the cog icon to toggle the sidebar open and closed."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/mode-switcher/index.js:24
+msgid "Visual Editor"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/mode-switcher/index.js:27
+msgid "Code Editor"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/mode-switcher/index.js:43
+msgid "Editor"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/more-menu/index.js:19
+msgid "Show more tools & options"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/more-menu/index.js:21
+msgid "Hide more tools & options"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/options-menu-item/index.js:17
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:35
+msgid "Options"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/plugins-more-menu-group/index.js:24
+msgid "Plugins"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/tools-more-menu-group/index.js:24
+msgid "Tools"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:21
+msgid "Top Toolbar"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:22
+msgid "Access all block and document tools in a single place"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:24
+msgid "Top toolbar activated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:25
+msgid "Top toolbar deactivated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:28
+msgid "Spotlight Mode"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:29
+msgid "Focus on one block at a time"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:31
+msgid "Spotlight mode activated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:32
+msgid "Spotlight mode deactivated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:35
+msgid "Fullscreen Mode"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:36
+msgid "Work without distraction"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:38
+msgid "Fullscreen mode activated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:39
+msgid "Fullscreen mode deactivated"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:100
+msgid "Make the selected text italic."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:103
+msgid "Underline the selected text."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:106
+msgid "Convert the selected text into a link."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:109
+msgid "Remove a link."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:112
+msgid "Add a strikethrough to the selected text."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:115
+msgid "Display the selected text in a monospaced font."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:16
+msgid "Global shortcuts"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:19
+msgid "Display this help."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:22
+msgid "Save your changes."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:25
+msgid "Undo your last changes."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:28
+msgid "Redo your last undo."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:31
+msgid "Show or hide the settings sidebar."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:35
+msgid "Open the block navigation menu."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:38
+msgid "Navigate to the next part of the editor."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:42
+msgid "Navigate to the previous part of the editor."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:46
+msgid "Navigate to the next part of the editor (alternative)."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:49
+msgid "Navigate to the previous part of the editor (alternative)."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:52
+msgid "Navigate to the nearest toolbar."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:55
+msgid "Switch between Visual Editor and Code Editor."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:59
+msgid "Selection shortcuts"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:62
+msgid "Select all text when typing. Press again to select all blocks."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:65
+msgid "Clear selection."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:68
+#. The 'escape' key on a keyboard.
+msgid "Escape"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:72
+msgid "Block shortcuts"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:75
+msgid "Duplicate the selected block(s)."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:78
+msgid "Remove the selected block(s)."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:81
+msgid "Insert a new block before the selected block(s)."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:84
+msgid "Insert a new block after the selected block(s)."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:87
+msgid "Change the block type after adding a new paragraph."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:90
+#. The forward-slash character. e.g. '/'.
+msgid "Forward-slash"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:94
+msgid "Text formatting"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/config.js:97
+msgid "Make the selected text bold."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/keyboard-shortcut-help-modal/index.js:83
+#: node_modules/@wordpress/edit-post/build-module/plugins/keyboard-shortcuts-help-menu-item/index.js:19
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/layout/index.js:100
+msgid "Open publish panel"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/layout/index.js:61
+#. accessibility text for the publish landmark region.
+msgid "Editor publish"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/layout/index.js:71
+msgid "Editor content"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/manage-blocks-modal/index.js:32
+#: node_modules/@wordpress/edit-post/build-module/plugins/manage-blocks-menu-item/index.js:21
+msgid "Block Manager"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:39
+msgid "General"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:41
+msgid "Enable Pre-publish Checks"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:43
+msgid "Enable Tips"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:45
+msgid "Document Panels"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:47
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-link/index.js:54
+msgid "Permalink"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:57
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/featured-image/index.js:33
+#: node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js:24
+msgid "Featured Image"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:60
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-excerpt/index.js:27
+msgid "Excerpt"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:65
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/discussion-panel/index.js:29
+msgid "Discussion"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:68
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/page-attributes/index.js:32
+msgid "Page Attributes"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/index.js:71
+msgid "Advanced Panels"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/options-modal/meta-boxes-section.js:36
+msgid "Custom Fields"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/plugin-sidebar/index.js:40
+msgid "Editor plugins"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/plugin-sidebar/index.js:42
+msgid "Close plugin"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/plugin-sidebar/index.js:45
+msgid "Unpin from toolbar"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/plugin-sidebar/index.js:45
+msgid "Pin to toolbar"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-link/index.js:60
+msgid "URL Slug"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-link/index.js:93
+msgid "The last part of the URL. "
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-link/index.js:95
+msgid "Read about permalinks"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-schedule/index.js:18
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:36
+msgid "Publish"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-schedule/index.js:27
+msgid "Click to change"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-status/index.js:34
+msgid "Status & Visibility"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/post-visibility/index.js:15
+msgid "Visibility"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/settings-header/index.js:23
+#. ARIA label for the Document sidebar tab, selected.
+msgid "Document (selected)"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/settings-header/index.js:30
+#. ARIA label for the Block sidebar tab, selected.
+msgid "Block (selected)"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/settings-header/index.js:31
+#. ARIA label for the Block sidebar tab, not selected.
+msgid "Block"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/settings-header/index.js:38
+msgid "Close settings"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/settings-header/index.js:44
+msgid "Document"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/sidebar/settings-sidebar/index.js:32
+msgid "Editor settings"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/text-editor/index.js:20
+msgid "Editing Code"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/text-editor/index.js:24
+msgid "Exit Code Editor"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/visual-editor/block-inspector-button.js:32
+msgid "Block settings closed"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/visual-editor/block-inspector-button.js:34
+msgid "Additional settings are now available in the Editor block settings sidebar"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/visual-editor/block-inspector-button.js:38
+msgid "Hide Block Settings"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/visual-editor/block-inspector-button.js:38
+msgid "Show Block Settings"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/hooks/components/media-upload/index.js:108
+msgid "Select"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/hooks/components/media-upload/index.js:90
+msgid "Select or Upload Media"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/hooks/validate-multiple-use/index.js:84
+msgid "Find original"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/hooks/validate-multiple-use/index.js:90
+msgid "Remove"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/hooks/validate-multiple-use/index.js:96
+msgid "Transform into:"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/hooks/validate-multiple-use/index.js:97
+msgid "This block can only be used once."
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/plugins/copy-content-menu-item/index.js:28
+msgid "Copy All Content"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/store/effects.js:130
+msgid "Visual editor selected"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/store/effects.js:130
+msgid "Code editor selected"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/document-outline/index.js:26
+msgid "(Empty heading)"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/document-outline/index.js:31
+msgid "(Incorrect heading level)"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/document-outline/index.js:36
+msgid "(Your theme may already use a H1 for the post title)"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/document-outline/index.js:41
+msgid "(Multiple H1 headings are not recommended)"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/document-outline/index.js:99
+msgid "Title"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/editor-history/redo.js:17
+msgid "Redo"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/editor-history/undo.js:17
+msgid "Undo"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/error-boundary/index.js:77
+msgid "Attempt Recovery"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/error-boundary/index.js:81
+msgid "Copy Post Text"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/error-boundary/index.js:85
+msgid "Copy Error"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/error-boundary/index.js:86
+msgid "The editor has encountered an unexpected error."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/page-attributes/order.js:44
+msgid "Order"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/page-attributes/parent.js:37
+msgid "no title"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/page-attributes/parent.js:43
+msgid "no parent"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/page-attributes/template.js:25
+msgid "Template:"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-author/index.js:56
+msgid "Author"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-comments/index.js:24
+msgid "Allow Comments"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-excerpt/index.js:17
+msgid "Write an excerpt (optional)"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-excerpt/index.js:24
+msgid "https://codex.wordpress.org/Excerpt"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-excerpt/index.js:25
+msgid "Learn more about manual excerpts"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js:26
+msgid "Set featured image"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js:28
+msgid "Remove image"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js:38
+msgid "To edit the featured image, you need permission to upload media."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-featured-image/index.js:69
+msgid "Edit or update the image"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:22
+msgid "Aside"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:28
+#: node_modules/@wordpress/format-library/build-module/link/index.js:126
+msgid "Link"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:37
+msgid "Standard"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:40
+msgid "Status"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:49
+msgid "Chat"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:75
+msgid "Post Format"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-format/index.js:89
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-post-format-panel.js:36
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-tags-panel.js:28
+msgid "Suggestion:"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-last-revision/index.js:26
+msgid "%d Revision"
+msgid_plural "%d Revisions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:192
+msgid "Exit the Editor"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:195
+msgid "Someone else has taken over this post."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:195
+msgid "This post is already being edited."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:203
+msgid "Avatar"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:207
+#. %s: user's display name
+msgid ""
+"%s now has editing control of this post. Don’t worry, your changes up to "
+"this moment have been saved."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:207
+msgid ""
+"Another user now has editing control of this post. Don’t worry, your "
+"changes up to this moment have been saved."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:215
+#. %s: user's display name
+msgid ""
+"%s is currently working on this post, which means you cannot make changes, "
+"unless you take over."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:215
+msgid ""
+"Another user is currently working on this post, which means you cannot make "
+"changes, unless you take over."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-locked-modal/index.js:225
+msgid "Take Over"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-pending-status/index.js:25
+msgid "Pending Review"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/editor.js:83
+msgid "Edit post permalink"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/index.js:104
+msgid "Permalink copied"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/index.js:104
+msgid "Copy the permalink"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/index.js:126
+msgid "Permalink:"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-permalink/index.js:154
+msgid "Change Permalinks"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-pingbacks/index.js:24
+msgid "Allow Pingbacks & Trackbacks"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-preview-button/index.js:166
+msgid ""
+"Click “Preview” to load a preview of this page, so you can make sure you’re "
+"happy with your blocks."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-preview-button/index.js:49
+msgid "Generating preview…"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/index.js:119
+msgid "Schedule…"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/index.js:119
+msgid "Publish…"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/index.js:129
+msgid ""
+"Finished writing? That’s great, let’s get this published right now. Just "
+"click “Publish” and you’re good to go."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:21
+msgid "Publishing…"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:23
+msgid "Updating…"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:25
+msgid "Scheduling…"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:29
+msgid "Submit for Review"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:31
+msgid "Update"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-button/label.js:33
+msgid "Schedule"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/index.js:107
+msgid "Close panel"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/index.js:115
+msgid "Always show pre-publish checks."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/index.js:94
+msgid "Scheduled"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/index.js:94
+msgid "Published"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-post-format-panel.js:39
+msgid "Use a post format"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-post-format-panel.js:43
+msgid ""
+"Your theme uses post formats to highlight different kinds of content, like "
+"images or videos. Apply a post format to see this special styling."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-post-format-panel.js:46
+msgid "Apply the \"%1$s\" format."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-tags-panel.js:31
+msgid "Add tags"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/maybe-tags-panel.js:35
+msgid ""
+"Tags help users and search engines navigate your site and find your "
+"content. Add a few keywords to describe your post."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:100
+msgid "What’s next?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:105
+#. %s: post type singular name
+msgid "%s address"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:117
+msgid "Copy Link"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:90
+msgid "is now scheduled. It will go live on"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/postpublish.js:90
+msgid "is now live."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:33
+msgid "Are you ready to submit for review?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:34
+msgid ""
+"When you’re ready, submit your work for review, and an Editor will be able "
+"to approve it for you."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:36
+msgid "Are you ready to schedule?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:37
+msgid "Your work will be published at the specified date and time."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:39
+msgid "Are you ready to publish?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:40
+msgid "Double-check your settings before publishing."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:47
+msgid "Visibility:"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-publish-panel/prepublish.js:53
+msgid "Publish:"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-saved-state/index.js:112
+msgid "Saved"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-saved-state/index.js:123
+msgid "Save as Pending"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-saved-state/index.js:123
+msgid "Save Draft"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-saved-state/index.js:96
+msgid "Autosaving"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-saved-state/index.js:96
+msgid "Saving"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-schedule/label.js:13
+msgid "Immediately"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-sticky/index.js:20
+msgid "Stick to the top of the blog"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-switch-to-draft-button/index.js:25
+msgid "Are you sure you want to unpublish this post?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-switch-to-draft-button/index.js:27
+msgid "Are you sure you want to unschedule this post?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-switch-to-draft-button/index.js:41
+msgid "Switch to Draft"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:280
+msgid "Add New Tag"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:280
+msgid "Add New Term"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:281
+msgid "Tag"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:281
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:195
+msgid "Term"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:444
+msgid "Add new category"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:444
+msgid "Add new term"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:445
+msgid "Parent Category"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:445
+msgid "Parent Term"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:450
+msgid "Search Terms"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:451
+msgid "Terms"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-text-editor/index.js:85
+msgid "Type text or HTML"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-text-editor/index.js:93
+msgid "Start writing with text or HTML"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-title/index.js:154
+msgid "Add title"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-trash/index.js:31
+msgid "Move to trash"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/index.js:118
+msgid "Post Visibility"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/index.js:147
+msgid "Create password"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/index.js:153
+msgid "Use a secure password"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/index.js:57
+msgid "Would you like to privately publish this post now?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js:11
+msgid "Private"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js:12
+msgid "Only visible to site admins and editors."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js:15
+msgid "Password Protected"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js:16
+msgid ""
+"Protected with a password you choose. Only those with the password can view "
+"this post."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js:7
+msgid "Public"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-visibility/utils.js:8
+msgid "Visible to everyone."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/provider/index.js:53
+msgid ""
+"There is an autosave of this post that is more recent than the version "
+"below."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/provider/index.js:56
+msgid "View the autosave"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/index.js:29
+msgid "Content structure"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js:25
+msgid "Document Statistics"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js:29
+msgid "Words"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js:31
+msgid "Headings"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js:35
+msgid "Paragraphs"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js:39
+msgid "Blocks"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/table-of-contents/panel.js:43
+msgid "Document Outline"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/template-validation-notice/index.js:22
+msgid ""
+"Resetting the template may result in loss of content, do you want to "
+"continue?"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/template-validation-notice/index.js:31
+msgid ""
+"The content of your post doesn’t match the template assigned to your post "
+"type."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/template-validation-notice/index.js:34
+msgid "Keep it as is"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/template-validation-notice/index.js:37
+msgid "Reset the template"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/unsaved-changes-warning/index.js:54
+msgid "You have unsaved changes. If you proceed, they will be lost."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/effects/reusable-blocks.js:214
+msgid "Block created."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/effects/reusable-blocks.js:214
+msgid "Block updated."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/effects/reusable-blocks.js:329
+msgid "Block deleted."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/effects/reusable-blocks.js:419
+msgid "Untitled Reusable Block"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/utils/notice-builder.js:103
+msgid "Publishing failed"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/utils/notice-builder.js:104
+msgid "Scheduling failed"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/utils/notice-builder.js:106
+msgid "Updating failed"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/store/utils/notice-builder.js:120
+msgid "Trashing failed"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/utils/media-upload/media-upload.js:150
+msgid "Sorry, this file type is not permitted for security reasons."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/utils/media-upload/media-upload.js:163
+msgid "Sorry, this file type is not supported here."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/utils/media-upload/media-upload.js:176
+msgid "This file exceeds the maximum upload size for this site."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/utils/media-upload/media-upload.js:189
+msgid "This file is empty."
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/utils/media-upload/media-upload.js:279
+#. %s: file name
+msgid "Error while uploading file %s to the media library."
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/bold/index.js:34
+msgid "Bold"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/image/index.js:110
+msgid "Inline Image"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/image/index.js:29
+msgid "media"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/italic/index.js:34
+msgid "Italic"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/link/index.js:118
+msgid "Unlink"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/link/index.js:89
+msgid "Link removed."
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/link/inline.js:208
+msgid "Warning: the link has been inserted but may have errors. Please test it."
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/link/inline.js:210
+msgid "Link edited."
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/link/inline.js:212
+msgid "Link inserted."
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/link/utils.js:99
+#. accessibility label for external links, where the argument is the link text
+msgid "%s (opens in a new tab)"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/strikethrough/index.js:33
+msgid "Strikethrough"
+msgstr ""
+
+#: node_modules/@wordpress/format-library/build-module/underline/index.js:13
+msgid "Underline"
+msgstr ""
+
+#: node_modules/@wordpress/keycodes/build-module/index.js:223
+msgid "Comma"
+msgstr ""
+
+#: node_modules/@wordpress/keycodes/build-module/index.js:223
+msgid "Period"
+msgstr ""
+
+#: node_modules/@wordpress/keycodes/build-module/index.js:223
+msgid "Backtick"
+msgstr ""
+
+#: node_modules/@wordpress/nux/build-module/components/dot-tip/index.js:42
+msgid "Editor tips"
+msgstr ""
+
+#: node_modules/@wordpress/nux/build-module/components/dot-tip/index.js:47
+msgid "See next tip"
+msgstr ""
+
+#: node_modules/@wordpress/nux/build-module/components/dot-tip/index.js:47
+msgid "Got it"
+msgstr ""
+
+#: node_modules/@wordpress/nux/build-module/components/dot-tip/index.js:50
+msgid "Disable tips"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js:98
+#. Button to fix block content
+msgctxt "imperative verb"
+msgid "Resolve"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-preview-button/index.js:160
+msgctxt "imperative verb"
+msgid "Preview"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/block-styles/index.js:113
+#: node_modules/@wordpress/block-library/build-module/button/index.js:83
+#: node_modules/@wordpress/block-library/build-module/pullquote/index.js:70
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:58
+#: node_modules/@wordpress/block-library/build-module/table/index.js:110
+msgctxt "block style"
+msgid "Default"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/button/index.js:90
+msgctxt "block style"
+msgid "Squared"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/quote/index.js:62
+msgctxt "block style"
+msgid "Large"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js:328
+msgctxt "blocks"
+msgid "Most Used"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/list-edit.js:149
+msgctxt "keyboard key"
+msgid "Backspace"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/components/rich-text/list-edit.js:156
+msgctxt "keyboard key"
+msgid "Space"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:77
+msgctxt "font size name"
+msgid "Small"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:81
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:53
+msgctxt "font size name"
+msgid "Normal"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:85
+msgctxt "font size name"
+msgid "Medium"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:89
+msgctxt "font size name"
+msgid "Large"
+msgstr ""
+
+#: node_modules/@wordpress/block-editor/build-module/store/defaults.js:93
+msgctxt "font size name"
+msgid "Huge"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/font-size-picker/index.js:53
+msgctxt "font size name"
+msgid "Custom"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/classic/edit.js:158
+msgctxt "button to expand options"
+msgid "More"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/classic/index.js:16
+msgctxt "block title"
+msgid "Classic"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/index.js:17
+msgctxt "block title"
+msgid "Embed"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-placeholder.js:38
+msgctxt "button label"
+msgid "Embed"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-placeholder.js:43
+msgctxt "button label"
+msgid "Try again"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/embed/embed-placeholder.js:46
+msgctxt "button label"
+msgid "Convert to link"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/file/index.js:63
+msgctxt "button label"
+msgid "Download"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/media-text/edit.js:36
+msgctxt "content placeholder"
+msgid "Content…"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/more/index.js:22
+msgctxt "block name"
+msgid "More"
+msgstr ""
+
+#: node_modules/@wordpress/block-library/build-module/paragraph/edit.js:179
+msgctxt "editor button"
+msgid "Left to right"
+msgstr ""
+
+#: node_modules/@wordpress/components/build-module/date-time/index.js:73
+msgctxt "keyboard button"
+msgid "Enter"
+msgstr ""
+
+#: node_modules/@wordpress/edit-post/build-module/components/header/writing-menu/index.js:18
+msgctxt "noun"
+msgid "View"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:282
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/hierarchical-term-selector.js:195
+msgctxt "term"
+msgid "%s added"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:283
+msgctxt "term"
+msgid "%s removed"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/post-taxonomies/flat-term-selector.js:284
+msgctxt "term"
+msgid "Remove %s"
+msgstr ""
+
+#: node_modules/@wordpress/editor/build-module/components/word-count/index.js:18
+msgctxt "Word count type. Do not translate!"
+msgid "words"
+msgstr ""

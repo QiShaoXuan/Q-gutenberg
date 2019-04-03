@@ -1,4 +1,4 @@
-import { plugins, use } from '@wordpress/data';
+import * as data from '@wordpress/data';
 
-use(plugins.controls);
-use(plugins.persistence, { storageKey: 'WP_DATA_USER_1' });
+data.use(data.plugins.persistence, { storageKey: 'WP_DATA_USER_1' });
+data.use(data.plugins.controls);

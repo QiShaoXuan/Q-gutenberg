@@ -1,3 +1,3 @@
-export default (inEnv) => {
-  return require(`./build/${inEnv.type}.js`);
+module.exports = function(inEnv) {
+  return require(`./build/${inEnv.TYPE}.js`);
 };

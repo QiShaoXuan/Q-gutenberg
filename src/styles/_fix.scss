@@ -14,6 +14,9 @@ html {
 body {
   margin: 0;
 }
+.edit-post-toggle-publish-panel{
+  top:-10px;
+}
 
 .edit-post-more-menu .components-button svg {
   transform: rotate(0deg);
@@ -40,10 +43,6 @@ body {
 
 .block-editor-block-mover__control {
   padding: 0;
-}
-
-.wp-block {
-  max-width: 1024px;
 }
 
 // global:

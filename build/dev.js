@@ -8,7 +8,8 @@ module.exports = merge(baseConfig, {
     gutenberg: ['./public/index.js']
   },
   output: {
-    path: resolve(cwd, 'dist')
+    libraryTarget: 'umd',
+    path: resolve(cwd, 'docs')
   },
   devServer: {
     host: '0.0.0.0'

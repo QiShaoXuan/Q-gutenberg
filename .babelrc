@@ -1,21 +1,11 @@
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "presets": ["env", "react"],
   "plugins": [
-    [
-      "@babel/plugin-proposal-decorators",
-      {
-        "legacy": true
-      }
-    ],
-    "@babel/plugin-proposal-class-properties",
-    "@babel/plugin-transform-spread",
-    "@babel/plugin-proposal-object-rest-spread",
-    "@babel/plugin-syntax-dynamic-import",
-    [
-      "@wordpress/babel-plugin-makepot",
-      {
-        "output": "languages/gutenberg.pot"
-      }
-    ]
+    "transform-class-properties",
+    "transform-es2015-spread",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    "syntax-dynamic-import",
+    [ "@wordpress/babel-plugin-makepot", { "output": "languages/gutenberg.pot" } ]
   ]
 }

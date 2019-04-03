@@ -1,11 +1,5 @@
 import React from 'react';
-// import GutenbergEditor from '../src/main';
-
-
-import '../src/scripts/data';
-import '../src/scripts/api-fetch';
-import GutenbergEditor from '../dist/gutenberg';
-import '../dist/gutenberg.css';
+import GutenbergEditor from '../src/main';
 
 class App extends React.Component {
   state = {
@@ -34,10 +28,6 @@ class App extends React.Component {
       }
     });
   };
-
-  componentDidMount() {
-    console.log('cdm.', require('@wordpress/data'));
-  }
 
   render() {
     return (

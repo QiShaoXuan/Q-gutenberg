@@ -21,7 +21,7 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(css|scss|sass)$/i,
+        test: /\.(scss|sass)$/i,
         use: extractCSS.extract({
           fallback: 'style-loader', // creates style nodes from JS strings
           use: [
@@ -34,13 +34,15 @@ module.exports = {
   },
   plugins: [
     extractCSS,
-    new CleanWebpackPlugin(['dist', 'languages']),
+    new CleanWebpackPlugin(['docs', 'languages']),
     new HtmlWebpackPlugin({ template: './public/index.ejs' })
   ],
   externals: [
     {
       react: 'React',
-      'react-dom': 'ReactDOM'
+      'react-dom': 'ReactDOM',
+      moment: 'moment',
+      jquery: 'jQuery'
     }
   ]
 };

@@ -2,15 +2,38 @@
 //@import '~tinymce/skins/ui/oxide-dark/skin';
 //@import '~tinymce/skins/ui/oxide-dark/content';
 
-@import '~@wordpress/block-library/build-style/style.css';
-@import '~@wordpress/block-editor/build-style/style.css';
-@import '~@wordpress/components/build-style/style.css';
-@import '~@wordpress/format-library/build-style/style.css';
-@import '~@wordpress/nux/build-style/style.css';
-@import '~@wordpress/editor/build-style/style.css';
-@import '~@wordpress/edit-post/build-style/style.css';
+//@import '~@wordpress/block-library/build-style/style.css';
+//@import '~@wordpress/block-editor/build-style/style.css';
+//@import '~@wordpress/components/build-style/style.css';
+//@import '~@wordpress/format-library/build-style/style.css';
+//@import '~@wordpress/nux/build-style/style.css';
+//@import '~@wordpress/editor/build-style/style.css';
+//@import '~@wordpress/edit-post/build-style/style.css';
 
+//@import "./packages/block-library-style.css";
+//@import "./packages/block-editor-style.css";
+//@import "./packages/components-style.css";
+//@import "./packages/format-library-style.css";
+//@import "./packages/nux-style.css";
+//@import "./packages/editor-style.css";
+//@import "./packages/edit-post-style.css";
+
+@import "./packages/block-editor-style.css";
+@import "./packages/block-library-editor.css";
+@import "./packages/block-library-style.css";
+@import "./packages/block-library-theme.css";
+@import "./packages/components-style.css";
+@import "./packages/edit-post-style.css";
+@import "./packages/editor-editor-styles.css";
+@import "./packages/editor-style.css";
+@import "./packages/format-library-style.css";
+@import "./packages/nux-style.css";
 //@import 'gutenberg-theme';
 //@import 'admin';
 @import 'fix';
 
+.is-style{
+  &-tss-paragraph{
+    background: red;
+  }
+}

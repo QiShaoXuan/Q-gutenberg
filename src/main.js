@@ -1,17 +1,42 @@
-// import './scripts/data';
-import './scripts/api-fetch';
+import './scripts/data';
 import './scripts/inject';
-import './styles/style.scss';
+import './scripts/api-fetch';
 
 // extensions:
+import './extensions/sidebar';
+import './extensions/notices';
+
+import React from 'react';
 import PropTypes from 'prop-types';
 import noop from 'noop';
-import { removeFilter } from '@wordpress/hooks';
-import Header from './overrides/header';
+// -------------------- i18n ----------------------
+import cn from './i18n/gutenberg-cn';
+import { setLocaleData } from '@wordpress/i18n';
+
+setLocaleData(cn);
+// -------------------- END - i18n ----------------------
+
+// -------------------- content ----------------------
+import spring from './content'
+
+// -------------------- END - content ----------------------
 import Blocks from './scripts/blocks';
-import { subscribe, select } from '@wordpress/data';
-const { editPost, element } = window.wp;
+import { removeFilter } from '@wordpress/hooks';
+import './styles/style.scss';
+import Header from './overrides/header';
+import {
+  subscribe,
+  select,
+  dispatch
+} from '@wordpress/data';
+import addStyleNames from './scripts/addStyle';
+
+const { editPost, element, domReady } = window.wp;
 const { unmountComponentAtNode } = element;
+
+wp.domReady(() => {
+  // addStyleNames();
+});
 
 export default class extends React.Component {
   static propTypes = {
@@ -40,6 +65,7 @@ export default class extends React.Component {
   }
 
   componentDidMount() {
+    window.sss = this;
     this.attachEvents();
     this.initValue(this.props);
     this.initFilter();
@@ -110,7 +136,7 @@ export default class extends React.Component {
         status: 'draft',
         title: { raw: value.title },
         content: {
-          raw: value.content
+          raw: spring
         },
         type: 'page'
       })
@@ -145,18 +171,18 @@ export default class extends React.Component {
     };
 
     // unmount before register:
-    // domReady(() => {
-    console.log('dom ready');
-    editPost.initializeEditor('editor', 'page', 1, settings, {});
-    Blocks.unregisterUnused();
-    // });
+    domReady(() => {
+      console.log('dom ready');
+      editPost.initializeEditor('editor', 'page', 1, settings, {});
+      // Blocks.unregisterUnused();
+    });
   }
 
   render() {
     return (
       <div className="gutenberg-editor-wrapper">
-        <Header />
-        <div id="editor" className="gutenberg__editor" />
+        <Header/>
+        <div id="editor" className="gutenberg__editor"/>
       </div>
     );
   }
