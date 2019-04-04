@@ -180,9 +180,11 @@ export default class extends React.Component {
   }
 
   render() {
+    console.log('render')
+    
     return (
       <div className="gutenberg-editor-wrapper">
-        {/*<Header/>*/}
+        <Header/>
         <div id="editor" className="gutenberg__editor"/>
       </div>
     );
