@@ -198,7 +198,7 @@ export default class extends React.Component {
   }
 
   render() {
-    console.log('render');
+    console.log('update1');
 
     return (
       <div className="gutenberg-editor-wrapper">
