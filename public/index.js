@@ -8,7 +8,7 @@ class App extends React.Component {
       content:
         '<!-- wp:paragraph {"className":"has-text-color"} -->\n' +
         '<p class="has-text-color"><em>It’s a whole new way to use WordPress. Try it right here!</em></p>\n' +
-        '<!-- /wp:paragraph -->'
+        '<!-- /wp:paragraph -->',
     }
   };
 

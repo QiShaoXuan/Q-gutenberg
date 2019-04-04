@@ -12,12 +12,13 @@ import noop from 'noop';
 // -------------------- i18n ----------------------
 import cn from './i18n/gutenberg-cn';
 import { setLocaleData } from '@wordpress/i18n';
+import data from '@wordpress/data'
 
 setLocaleData(cn);
 // -------------------- END - i18n ----------------------
 
 // -------------------- content ----------------------
-import spring from './content';
+import spring from './content'
 
 // -------------------- END - content ----------------------
 import Blocks from './scripts/blocks';
@@ -62,24 +63,6 @@ export default class extends React.Component {
 
   get content() {
     return select('core/editor').getEditedPostContent();
-  }
-
-  componentWillMount() {
-    localStorage.setItem('WP_DATA_USER_1', JSON.stringify({
-      'core/edit-post': {
-        'preferences': {
-          'isGeneralSidebarDismissed': false,
-          'panels': { 'post-status': { 'opened': true } },
-          'features': {
-            'fixedToolbar': false,
-            'focusMode': true
-          },
-          'editorMode': 'visual',
-          'pinnedPluginItems': {},
-          'hiddenBlockTypes': []
-        }
-      }
-    }));
   }
 
   componentDidMount() {
@@ -186,19 +169,20 @@ export default class extends React.Component {
       canSave: true,
       canAutosave: true,
       mediaLibrary: false,
-      focusMode: true
+      focusMode:true
     };
 
     // unmount before register:
     domReady(() => {
-      console.log('dom ready');
       editPost.initializeEditor('editor', 'page', 1, settings, {});
+      wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'focusMode' )
+
       // Blocks.unregisterUnused();
     });
   }
 
   render() {
-    console.log('update1');
+    console.log('render')
 
     return (
       <div className="gutenberg-editor-wrapper">
