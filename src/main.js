@@ -12,8 +12,11 @@ import noop from 'noop';
 // -------------------- i18n ----------------------
 import cn from './i18n/gutenberg-cn';
 import { setLocaleData } from '@wordpress/i18n';
-import data from '@wordpress/data'
+import * as data from '@wordpress/data'
 
+if(data.select( 'core/edit-post' ).isFeatureActive('focusMode') === false){
+  data.dispatch( 'core/edit-post' ).toggleFeature( 'focusMode' )
+}
 setLocaleData(cn);
 // -------------------- END - i18n ----------------------
 
@@ -175,14 +178,13 @@ export default class extends React.Component {
     // unmount before register:
     domReady(() => {
       editPost.initializeEditor('editor', 'page', 1, settings, {});
-      wp.data.dispatch( 'core/edit-post' ).toggleFeature( 'focusMode' )
 
       // Blocks.unregisterUnused();
     });
   }
 
   render() {
-    console.log('render')
+    console.log('render update 3:29')
 
     return (
       <div className="gutenberg-editor-wrapper">
