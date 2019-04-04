@@ -17,7 +17,7 @@ setLocaleData(cn);
 // -------------------- END - i18n ----------------------
 
 // -------------------- content ----------------------
-import spring from './content'
+import spring from './content';
 
 // -------------------- END - content ----------------------
 import Blocks from './scripts/blocks';
@@ -62,6 +62,24 @@ export default class extends React.Component {
 
   get content() {
     return select('core/editor').getEditedPostContent();
+  }
+
+  componentWillMount() {
+    localStorage.setItem('WP_DATA_USER_1', {
+      'core/edit-post': {
+        'preferences': {
+          'isGeneralSidebarDismissed': false,
+          'panels': { 'post-status': { 'opened': true } },
+          'features': {
+            'fixedToolbar': false,
+            'focusMode': true
+          },
+          'editorMode': 'visual',
+          'pinnedPluginItems': {},
+          'hiddenBlockTypes': []
+        }
+      }
+    });
   }
 
   componentDidMount() {
@@ -168,7 +186,7 @@ export default class extends React.Component {
       canSave: true,
       canAutosave: true,
       mediaLibrary: false,
-      focusMode:true
+      focusMode: true
     };
 
     // unmount before register:
@@ -180,8 +198,8 @@ export default class extends React.Component {
   }
 
   render() {
-    console.log('render')
-    
+    console.log('render');
+
     return (
       <div className="gutenberg-editor-wrapper">
         <Header/>
