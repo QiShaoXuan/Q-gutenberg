@@ -167,7 +167,8 @@ export default class extends React.Component {
       canPublish: false,
       canSave: true,
       canAutosave: true,
-      mediaLibrary: false
+      mediaLibrary: false,
+      focusMode:true
     };
 
     // unmount before register:
@@ -181,7 +182,7 @@ export default class extends React.Component {
   render() {
     return (
       <div className="gutenberg-editor-wrapper">
-        <Header/>
+        {/*<Header/>*/}
         <div id="editor" className="gutenberg__editor"/>
       </div>
     );

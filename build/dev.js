@@ -12,6 +12,7 @@ module.exports = merge(baseConfig, {
     path: resolve(cwd, 'docs')
   },
   devServer: {
-    host: '0.0.0.0'
+    host: '0.0.0.0',
+    hot:false
   }
 });

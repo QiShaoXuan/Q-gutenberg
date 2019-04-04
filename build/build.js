@@ -22,7 +22,6 @@ module.exports = merge(baseConfig, {
     // gutenberg: ['./src/main.js']
     gutenberg: ['./public/index.js']
   },
-  externals: {},
   output: {
     libraryTarget: 'umd',
     path: resolve(cwd, 'docs')
