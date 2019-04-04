@@ -65,7 +65,7 @@ export default class extends React.Component {
   }
 
   componentWillMount() {
-    localStorage.setItem('WP_DATA_USER_1', {
+    localStorage.setItem('WP_DATA_USER_1', JSON.stringify({
       'core/edit-post': {
         'preferences': {
           'isGeneralSidebarDismissed': false,
@@ -79,7 +79,7 @@ export default class extends React.Component {
           'hiddenBlockTypes': []
         }
       }
-    });
+    }));
   }
 
   componentDidMount() {
