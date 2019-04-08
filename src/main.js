@@ -12,18 +12,35 @@ import noop from 'noop';
 // -------------------- i18n ----------------------
 import cn from './i18n/gutenberg-cn';
 import { setLocaleData } from '@wordpress/i18n';
-import * as data from '@wordpress/data'
+import * as data from '@wordpress/data';
 
-if(data.select( 'core/edit-post' ).isFeatureActive('focusMode') === false){
-  data.dispatch( 'core/edit-post' ).toggleFeature( 'focusMode' )
+import './plugin/color/index'
+import './plugin/fontSize/index'
+
+if (data.select('core/edit-post').isFeatureActive('focusMode') === false) {
+  data.dispatch('core/edit-post').toggleFeature('focusMode');
 }
 setLocaleData(cn);
 // -------------------- END - i18n ----------------------
 
 // -------------------- content ----------------------
-import spring from './content'
+import spring from './content';
 
 // -------------------- END - content ----------------------
+
+// -------------------- toolbar ----------------------
+import AlignmentToolbar from './toolbar/alignment';
+
+// -------------------- END - toolbar ----------------------
+// -------------------- paragraph ----------------------
+import {ParagraphSettings} from './plugin/paragraph/index'
+
+// -------------------- END - paragraph ----------------------
+// -------------------- advanced ----------------------
+const { createElement } = window.wp.element;
+const { registerFormatType, applyFormat, removeFormat, getActiveFormat } = window.wp.richText;
+const { InspectorControls, PanelColorSettings } = window.wp.editor;
+// -------------------- END - advanced ----------------------
 import Blocks from './scripts/blocks';
 import { removeFilter } from '@wordpress/hooks';
 import './styles/style.scss';
@@ -33,14 +50,9 @@ import {
   select,
   dispatch
 } from '@wordpress/data';
-import addStyleNames from './scripts/addStyle';
 
 const { editPost, element, domReady } = window.wp;
 const { unmountComponentAtNode } = element;
-
-wp.domReady(() => {
-  // addStyleNames();
-});
 
 export default class extends React.Component {
   static propTypes = {
@@ -172,23 +184,130 @@ export default class extends React.Component {
       canSave: true,
       canAutosave: true,
       mediaLibrary: false,
-      focusMode:true
+      focusMode: true
     };
 
     // unmount before register:
     domReady(() => {
       editPost.initializeEditor('editor', 'page', 1, settings, {});
 
+
+      // -------------------- font ----------------------
+
+      const { registerBlockType } = wp.blocks;
+
+      const {
+        RichText,
+        BlockControls
+      } = wp.editor;
+console.log('ParagraphSettings',ParagraphSettings)
+
+
+      registerBlockType('gutenberg-examples/aaaa',ParagraphSettings);
+
+      // registerBlockType('gutenberg-examples/example-04-controls-esnext', {
+      //   title: 'Example: Controls (esnext)',
+      //   icon: 'universal-access-alt',
+      //   category: 'layout',
+      //   attributes: {
+      //     content: {
+      //       type: 'array',
+      //       source: 'children',
+      //       selector: 'p'
+      //     },
+      //     alignment: {
+      //       type: 'string',
+      //       default: 'none'
+      //     }
+      //   },
+      //   edit: (props) => {
+      //     const {
+      //       attributes: {
+      //         content,
+      //         alignment
+      //       },
+      //       className
+      //     } = props;
+      //
+      //     const onChangeContent = (newContent) => {
+      //       props.setAttributes({ content: newContent });
+      //     };
+      //
+      //     const onChangeAlignment = (newAlignment) => {
+      //       props.setAttributes({ alignment: newAlignment === undefined ? 'none' : newAlignment });
+      //     };
+      //
+      //     return (
+      //       <div>
+      //         {
+      //           <BlockControls>
+      //             <AlignmentToolbar
+      //               value={alignment}
+      //               onChange={onChangeAlignment}
+      //             />
+      //           </BlockControls>
+      //         }
+      //         <RichText
+      //           className={className}
+      //           style={{ textAlign: alignment }}
+      //           tagName="p"
+      //           onChange={onChangeContent}
+      //           value={content}
+      //         />
+      //       </div>
+      //     );
+      //   },
+      //   save: (props) => {
+      //     return (
+      //       <RichText.Content
+      //         className={`gutenberg-examples-align-${ props.attributes.alignment }`}
+      //         tagName="p"
+      //         value={props.attributes.content}
+      //       />
+      //     );
+      //   }
+      // });
+
+      // -------------------- END - font ----------------------
+
+
+      // -------------------- toolbar ----------------------
+      var MyCustomButton = function(props) {
+        return wp.element.createElement(
+          wp.editor.RichTextToolbarButton, {
+            icon: 'editor-code',
+            title: 'Sample output',
+            onClick: function() {
+              props.onChange(wp.richText.toggleFormat(
+                props.value,
+                { type: 'my-custom-format/sample-output' }
+              ));
+            },
+            isActive: props.isActive
+          }
+        );
+      };
+      wp.richText.registerFormatType(
+        'my-custom-format/sample-output', {
+          title: 'Sample output',
+          tagName: 'samp',
+          className: null,
+          edit: MyCustomButton
+        }
+      );
+
+      // -------------------- END - toolbar ----------------------
+
       // Blocks.unregisterUnused();
     });
   }
 
   render() {
-    console.log('render update 3:29')
+    console.log('render update 3:29');
 
     return (
       <div className="gutenberg-editor-wrapper">
-        <Header/>
+        {/*<Header/>*/}
         <div id="editor" className="gutenberg__editor"/>
       </div>
     );

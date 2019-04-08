@@ -15,40 +15,40 @@ body {
   margin: 0;
 }
 // ---------------- new
-.edit-post-toggle-publish-panel{
-  display: none;
-}
-.nux-dot-tip.is-middle.is-right{
-  display: none;
-}
+//.edit-post-toggle-publish-panel{
+//  display: none;
+//}
+//.nux-dot-tip.is-middle.is-right{
+//  display: none;
+//}
+//
+//// ------------------------------
+//.edit-post-more-menu .components-button svg {
+//  transform: rotate(0deg);
+//}
+//
+//.gutenberg-editor-wrapper {
+//  min-width: 800px;
+//
+//  &-wrapper {
+//    position: absolute;
+//    top: 0;
+//    right: 0;
+//    bottom: 0;
+//    left: 0;
+//    border: 1px solid #000;
+//  }
+//  > .edit-post-header {
+//    left: 0;
+//    top: 0;
+//    z-index: 100;
+//    //outline: none;
+//  }
+//}
 
-// ------------------------------
-.edit-post-more-menu .components-button svg {
-  transform: rotate(0deg);
-}
-
-.gutenberg-editor-wrapper {
-  min-width: 800px;
-
-  &-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border: 1px solid #000;
-  }
-  > .edit-post-header {
-    left: 0;
-    top: 0;
-    z-index: 100;
-    outline: none;
-  }
-}
-
-.block-editor-block-mover__control {
-  padding: 0;
-}
+//.block-editor-block-mover__control {
+//  padding: 0;
+//}
 
 // global:
 *[tabindex]:focus {
@@ -56,68 +56,95 @@ body {
 }
 
 .screen-reader-text {
-  display: none;
+  //display: none;
 }
-
-// auto layout:
-@media (min-width: 782px) {
-  .gutenberg__editor {
-    &,
-    .components-navigate-regions {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-
-    .editor-post-saved-state {
-      visibility: visible;
-    }
-
-    .edit-post-layout {
-      .edit-post-sidebar,
-      .edit-post-layout__content {
-        position: absolute;
-      }
-      .edit-post-header {
-        display: none;
-        &.gutenberg-editor-header {
-          display: block;
-        }
-      }
-
-      .edit-post-layout__content {
-        ul,
-        ol {
-          padding-left: 10px;
-        }
-        ul {
-          list-style: circle;
-        }
-
-        margin: 0;
-        top: 56px;
-        left: 0;
-        right: 0;
-        overflow-y: auto;
-      }
-      .edit-post-sidebar {
-        width: 280px;
-        top: 56px;
-        ul,
-        li {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-      }
-
-      &.is-sidebar-opened {
-        .edit-post-layout__content {
-          right: 280px;
-        }
-      }
-    }
+.edit-post-header {
+  left: 0!important;
+  top:0!important;
+  .editor-post-publish-panel__toggle{
+    display: none!important;
   }
 }
+//
+.edit-post-layout{
+  &.is-sidebar-opened{
+    .edit-post-layout__content {
+      right: 280px !important;
+    }
+  }
+  .edit-post-layout__content{
+    top:0!important;
+    right:0!important;
+    margin-right:0!important;
+    margin-left: 0!important;
+  }
+}
+
+.edit-post-sidebar{
+  top:56px!important;
+  li{
+    list-style: none;
+  }
+}
+// auto layout:
+//@media (min-width: 782px) {
+//  .gutenberg__editor {
+//    &,
+//    .components-navigate-regions {
+//      position: absolute;
+//      top: 0;
+//      right: 0;
+//      bottom: 0;
+//      left: 0;
+//    }
+//
+//    .editor-post-saved-state {
+//      visibility: visible;
+//    }
+//
+//    .edit-post-layout {
+//      .edit-post-sidebar,
+//      .edit-post-layout__content {
+//        position: absolute;
+//      }
+//      .edit-post-header {
+//        //display: none;
+//        &.gutenberg-editor-header {
+//          display: block;
+//        }
+//      }
+//
+//      .edit-post-layout__content {
+//        ul,
+//        ol {
+//          padding-left: 10px;
+//        }
+//        ul {
+//          list-style: circle;
+//        }
+//
+//        margin: 0;
+//        top: 56px;
+//        left: 0;
+//        right: 0;
+//        overflow-y: auto;
+//      }
+//      .edit-post-sidebar {
+//        width: 280px;
+//        top: 56px;
+//        ul,
+//        li {
+//          list-style: none;
+//          padding: 0;
+//          margin: 0;
+//        }
+//      }
+//
+//      &.is-sidebar-opened {
+//        .edit-post-layout__content {
+//          right: 280px;
+//        }
+//      }
+//    }
+//  }
+//}
