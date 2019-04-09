@@ -68,8 +68,7 @@
     "gutenberg-i18n": "git+ssh://git@gitlab.finxos.com:tu-editor/gutenberg-i18n.git",
     "noop": "github:afeiship/noop",
     "po2json": "^1.0.0-alpha",
-    "prop-types": "^15.7.2",
-    "tinymce": "^5.0.3"
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@wordpress/babel-plugin-makepot": "^3.0.0",
@@ -100,6 +99,7 @@
     "eslint-plugin-react": "^7.10.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
+    "jQuery": "^1.7.4",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.11.0",
     "path-replace-loader": "^2.0.0",
@@ -109,6 +109,7 @@
     "rtlcss": "^2.4.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
+    "tinymce": "^5.0.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-middleware": "^3.6.0",

@@ -1,5 +1,6 @@
 import './scripts/data';
-import './scripts/inject';
+// import './scripts/inject';
+import './overrides/js/index'
 import './scripts/api-fetch';
 
 // extensions:
@@ -14,9 +15,8 @@ import cn from './i18n/gutenberg-cn';
 import { setLocaleData } from '@wordpress/i18n';
 import * as data from '@wordpress/data';
 
-import './plugin/color/index'
-import './plugin/fontSize/index'
-
+// import './plugin/color/index'
+import './plugin/sub-sup/index'
 if (data.select('core/edit-post').isFeatureActive('focusMode') === false) {
   data.dispatch('core/edit-post').toggleFeature('focusMode');
 }
@@ -37,9 +37,10 @@ import {ParagraphSettings} from './plugin/paragraph/index'
 
 // -------------------- END - paragraph ----------------------
 // -------------------- advanced ----------------------
-const { createElement } = window.wp.element;
-const { registerFormatType, applyFormat, removeFormat, getActiveFormat } = window.wp.richText;
-const { InspectorControls, PanelColorSettings } = window.wp.editor;
+const { registerFormatType, applyFormat, removeFormat, getActiveFormat,toggleFormat } = window.wp.richText;
+const { RichTextToolbarButton, RichTextShortcut } = window.wp.editor;
+
+const { createElement, Fragment } = window.wp.element
 // -------------------- END - advanced ----------------------
 import Blocks from './scripts/blocks';
 import { removeFilter } from '@wordpress/hooks';
@@ -172,19 +173,18 @@ export default class extends React.Component {
       availableTemplates: [],
       allowedBlockTypes: true,
       disableCustomColors: false,
-      disablePostFormats: true,
+      disablePostFormats: false,
       titlePlaceholder: 'Add title',
-      bodyPlaceholder: '',
+      bodyPlaceholder: 'Insert your custom block',
       isRTL: false,
-      autosaveInterval: 10,
+      autosaveInterval: 0,
       postLock: {
-        isLocked: false
+        isLocked: false,
       },
       canPublish: false,
       canSave: true,
       canAutosave: true,
-      mediaLibrary: false,
-      focusMode: true
+      mediaLibrary: true,
     };
 
     // unmount before register:
@@ -200,77 +200,42 @@ export default class extends React.Component {
         RichText,
         BlockControls
       } = wp.editor;
-console.log('ParagraphSettings',ParagraphSettings)
-
-
-      registerBlockType('gutenberg-examples/aaaa',ParagraphSettings);
-
-      // registerBlockType('gutenberg-examples/example-04-controls-esnext', {
-      //   title: 'Example: Controls (esnext)',
-      //   icon: 'universal-access-alt',
-      //   category: 'layout',
-      //   attributes: {
-      //     content: {
-      //       type: 'array',
-      //       source: 'children',
-      //       selector: 'p'
-      //     },
-      //     alignment: {
-      //       type: 'string',
-      //       default: 'none'
-      //     }
-      //   },
-      //   edit: (props) => {
-      //     const {
-      //       attributes: {
-      //         content,
-      //         alignment
-      //       },
-      //       className
-      //     } = props;
-      //
-      //     const onChangeContent = (newContent) => {
-      //       props.setAttributes({ content: newContent });
-      //     };
-      //
-      //     const onChangeAlignment = (newAlignment) => {
-      //       props.setAttributes({ alignment: newAlignment === undefined ? 'none' : newAlignment });
-      //     };
-      //
-      //     return (
-      //       <div>
-      //         {
-      //           <BlockControls>
-      //             <AlignmentToolbar
-      //               value={alignment}
-      //               onChange={onChangeAlignment}
-      //             />
-      //           </BlockControls>
-      //         }
-      //         <RichText
-      //           className={className}
-      //           style={{ textAlign: alignment }}
-      //           tagName="p"
-      //           onChange={onChangeContent}
-      //           value={content}
-      //         />
-      //       </div>
-      //     );
-      //   },
-      //   save: (props) => {
-      //     return (
-      //       <RichText.Content
-      //         className={`gutenberg-examples-align-${ props.attributes.alignment }`}
-      //         tagName="p"
-      //         value={props.attributes.content}
-      //       />
-      //     );
-      //   }
-      // });
-
       // -------------------- END - font ----------------------
 
+      const name = 'core/italic';
 
+      export const italic = {
+        name,
+        title: __( 'Italic' ),
+        tagName: 'em',
+        className: null,
+        edit( { isActive, value, onChange } ) {
+          const onToggle = () => onChange( toggleFormat( value, { type: name } ) );
+
+          return (
+            <Fragment>
+              <RichTextShortcut
+                type="primary"
+                character="i"
+                onUse={ onToggle }
+              />
+              <RichTextToolbarButton
+                name="italic"
+                icon="editor-italic"
+                title={ __( 'Italic' ) }
+                onClick={ onToggle }
+                isActive={ isActive }
+                shortcutType="primary"
+                shortcutCharacter="i"
+              />
+              <UnstableRichTextInputEvent
+                inputType="formatItalic"
+                onInput={ onToggle }
+              />
+            </Fragment>
+          );
+        },
+      };
       // -------------------- toolbar ----------------------
       var MyCustomButton = function(props) {
         return wp.element.createElement(
@@ -288,13 +253,57 @@ console.log('ParagraphSettings',ParagraphSettings)
         );
       };
       wp.richText.registerFormatType(
-        'my-custom-format/sample-output', {
+        'toolbar-controls/sample-output', {
           title: 'Sample output',
           tagName: 'samp',
           className: null,
           edit: MyCustomButton
         }
       );
+
+
+      // [
+      //   {
+      //     name: 'sup',
+      //     title: 'Superscript',
+      //     character: '.'
+      //   },
+      //   {
+      //     name: 'sub',
+      //     title: 'Subscript',
+      //     character: ','
+      //   }
+      // ].forEach(({ name, title, character, icon }) => {
+      //   const type = `advanced/${name}`
+      //
+      //   registerFormatType(type, {
+      //     title,
+      //     tagName: name,
+      //     className: null,
+      //     edit ({ isActive, value, onChange }) {
+      //       const onToggle = () => onChange(toggleFormat(value, { type }))
+      //
+      //       return (
+      //         createElement(Fragment, null,
+      //           createElement(RichTextShortcut, {
+      //             type: 'primary',
+      //             character,
+      //             onUse: onToggle
+      //           }),
+      //           createElement(RichTextToolbarButton, {
+      //             title,
+      //             onClick: onToggle,
+      //             isActive,
+      //             shortcutType: 'primary',
+      //             shortcutCharacter: character,
+      //             className: `toolbar-button-with-text toolbar-button__advanced-${name}`
+      //           })
+      //         )
+      //       )
+      //     }
+      //   })
+      // })
+
 
       // -------------------- END - toolbar ----------------------
 
@@ -307,7 +316,7 @@ console.log('ParagraphSettings',ParagraphSettings)
 
     return (
       <div className="gutenberg-editor-wrapper">
-        {/*<Header/>*/}
+        <Header/>
         <div id="editor" className="gutenberg__editor"/>
       </div>
     );
