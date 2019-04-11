@@ -1,12 +1,12 @@
 const { createElement } = window.wp.element;
 const { registerFormatType, applyFormat, removeFormat, getActiveFormat } = window.wp.richText;
-const { InspectorControls, PanelColorSettings } = window.wp.editor;
-// import PositionedAtSelection from '../position-at-selection/index'
-const { PositionedAtSelection, IconButton } = wp.components;
-const { withState } = wp.compose;
-import React from 'react';
+const { PositionedAtSelection } = wp.components;
 
-var timeout = null;
+import ColorPalette from './components/color-palette';
+import IconButton from './components/icon-btn';
+import FontSizeMenu from './components/font-size-menu';
+import { colors, manyColors } from './components/colors';
+import React from 'react';
 
 const type = 'tss-popup/font';
 
@@ -28,51 +28,6 @@ const styleStrToObj = (styleStr) => {
   });
   return styleObj;
 };
-
-const fontColors = [
-  '#000000',
-  '#333333',
-  '#666666',
-  '#999999',
-  '#CCCCCC',
-  '#FFFFFF',
-  '#330000',
-  '#333300',
-  '#FF0000',
-  '#FF6600',
-  '#FEFF00',
-  '#66FF99',
-  '#34CC00',
-  '#00C4CC',
-  '#3300FF',
-  '#6600FF'
-];
-
-class ColorPalette extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  colorChange = (color) => {
-    const propsColor = this.props.value;
-    if (propsColor != color) {
-      this.props.onChange(color);
-    }
-  };
-
-  render() {
-    const { show, colors, value } = this.props;
-    return show ? (
-      <div className="color-palette">
-        {colors.map((color) => <div
-          className={`color-block ${value == color ? 'active' : ''}`}
-          style={{ backgroundColor: color }}
-          onClick={() => this.colorChange(color)}
-        ></div>)}
-      </div>
-    ) : null;
-  }
-}
 
 class Popup extends React.Component {
   constructor() {
@@ -101,6 +56,10 @@ class Popup extends React.Component {
     const styles = this.props.activeStyle;
     styles[key] = value;
 
+    if (value === '') {
+      delete styles[key];
+    }
+
     this.props.onChange(applyFormat(this.props.value, {
       type,
       attributes: {
@@ -109,93 +68,96 @@ class Popup extends React.Component {
     }));
   };
 
-  handleBold = () => {
-    const weight = this.props.activeStyle['font-weight'] === 'bold' ? 'normal' : 'bold';
-    this.styleChange('font-weight', weight);
+  toggleStyle = (name, trueValue, falseValue) => {
+    const style = this.props.activeStyle[name] === trueValue ? falseValue : trueValue;
+    this.setStyle(name, style);
   };
-  handleItalic = () => {
-    // font-style:italic;
-    const fontStyle = this.props.activeStyle['font-style'] === 'italic' ? 'normal' : 'italic';
-    this.styleChange('font-style', fontStyle);
+
+  setStyle = (name, style) => {
+    this.styleChange(name, style);
+    this.btnClick(name);
   };
-  handleUnderline = () => {
-    const underline = this.props.activeStyle['text-decoration'] === 'underline' ? 'none' : 'underline';
-    this.styleChange('text-decoration', underline);
-  }
 
   render() {
     const { activeStyle } = this.props;
     const { show, open } = this.state;
-    console.log('activeStyle', activeStyle);
 
     return (
       <div className="Tss-font-style"
         style={{ opacity: show ? 1 : 0 }}>
+        {/* ---------- 字体大小 ----------*/}
+        <div
+          className={`hover-spread ${open === 'font-size' ? 'active' : ''}`}>
+          <IconButton
+            tip="字号大小可保留至微信平台"
+            icon={<img
+              src="https://i.loli.net/2019/04/11/5caf249ddb483.png"
+              style={{ marginLeft: '3px' }}/>}
+            onClick={() => this.btnClick('font-size')}
+            text={activeStyle['font-size'] ? activeStyle['font-size'].split('px')[0] : '20'}
+          />
+          {open === 'font-size' ?
+            <FontSizeMenu
+              onChange={(fontsize) => this.setStyle('font-size', `${fontsize}px`)}/> : null}
+        </div>
         {/* ---------- 字体加粗 ----------*/}
         <div
           className={`hover-spread ${activeStyle['font-weight'] === 'bold' ? 'active' : ''}`}>
-          <div className="tss-popup-btn"
-            onClick={() => this.handleBold()}>
-            <img
-              src="https://i.loli.net/2019/04/11/5caeca7d4f017.png"
-              alt="format-bold-on.png"
-              title="format-bold-on.png"/>
-          </div>
+          <IconButton
+            tip="加粗"
+            onClick={() => this.toggleStyle('font-weight', 'bold', 'normal')}
+            icon="https://i.loli.net/2019/04/11/5caeca7d4f017.png"/>
         </div>
         {/* ---------- 斜体 ----------*/}
         <div
           className={`hover-spread ${activeStyle['font-style'] === 'italic' ? 'active' : ''}`}>
-          <div className="tss-popup-btn"
-            onClick={() => this.handleItalic()}>
-            <img
-              src="https://i.loli.net/2019/04/11/5caeca7d504b7.png"
-              alt="format-italic-on.png"
-              title="format-italic-on.png"/>
-          </div>
+          <IconButton
+            tip="斜体"
+            onClick={() => this.toggleStyle('font-style', 'italic', 'normal')}
+            icon="https://i.loli.net/2019/04/11/5caeca7d504b7.png"/>
         </div>
         {/* ---------- 下划线 ----------*/}
         <div
           className={`hover-spread ${activeStyle['text-decoration'] === 'underline' ? 'active' : ''}`}>
-          <div className="tss-popup-btn"
-            onClick={() => this.handleUnderline()}>
-            <img src="https://i.loli.net/2019/04/11/5caeca7d4eb7c.png" alt="format-underlined-on.png" title="format-underlined-on.png" />
-          </div>
+          <IconButton
+            tip="下划线"
+            onClick={() => this.toggleStyle('text-decoration', 'underline', 'none')}
+            icon="https://i.loli.net/2019/04/11/5caeca7d4eb7c.png"
+          />
         </div>
 
         {/* ---------- 字体颜色 ----------*/}
         <div
           className={`hover-spread ${open === 'color' ? 'active' : ''}`}>
-          <div className="tss-popup-btn"
-            onClick={() => this.btnClick('color')}>
-            <img
-              src="https://i.loli.net/2019/04/11/5caeca7d4eb88.png"
-              alt="format-color-on.png"
-              title="format-color-on.png"/>
-          </div>
+          <IconButton
+            tip="字体颜色"
+            onClick={() => this.btnClick('color')}
+            icon="https://i.loli.net/2019/04/11/5caeca7d4eb88.png"
+          />
           <ColorPalette
             show={open === 'color' ? true : false}
-            colors={fontColors}
+            colors={colors}
+            manyColors={manyColors}
             value={activeStyle.color ? activeStyle.color : ''}
             onChange={(color) => this.styleChange('color', color)}
           />
         </div>
         {/* ---------- 背景颜色 ----------*/}
         <div className="hover-spread"
-          className={`hover-spread ${open === 'bg' ? 'active' : ''}`}>
-          <div className="tss-popup-btn"
-            onClick={() => this.btnClick('bg')}>
-            <img
-              src="https://i.loli.net/2019/04/11/5caecf869903e.png"
-              alt="format-bgcolor-on.png"
-              title="format-bgcolor-on.png"/>
-          </div>
+          className={`hover-spread ${open === 'background' ? 'active' : ''}`}>
+          <IconButton
+            tip="背景颜色"
+            onClick={() => this.btnClick('background')}
+            icon="https://i.loli.net/2019/04/11/5caecf869903e.png"
+          />
 
           <ColorPalette
             show={open === 'background' ? true : false}
-            colors={fontColors}
+            colors={colors}
             value={activeStyle.background ? activeStyle.background : ''}
             onChange={(color) => this.styleChange('background', color)}
           />
+
         </div>
       </div>
     );
@@ -238,3 +200,10 @@ registerFormatType(type, {
 //   <img src="https://i.loli.net/2019/04/11/5caeca7d505c5.png" alt="format-italic.png" title="format-italic.png" />
 //   <img src="https://i.loli.net/2019/04/11/5caeca7d506aa.png" alt="format-color.png" title="format-color.png" />
 //   <img src="https://i.loli.net/2019/04/11/5caeca7d61954.png" alt="format-underlined.png" title="format-underlined.png" />
+
+// {/*<img src="https://i.loli.net/2019/04/11/5caf052657805.png" alt="picker.png" title="picker.png" />*/}
+// {/*<img src="https://i.loli.net/2019/04/11/5caf052659229.png" alt="cancel.png" title="cancel.png" />*/}
+
+// <img src="https://i.loli.net/2019/04/11/5caf0ecda2af7.png" alt="arrow.png" title="arrow.png" />
+// <img src="https://i.loli.net/2019/04/11/5caf0ecda4477.png" alt="duigou.png" title="duigou.png" />
+// <img src="https://i.loli.net/2019/04/11/5caf249ddb483.png" alt="two-arrow.png" title="two-arrow.png" />

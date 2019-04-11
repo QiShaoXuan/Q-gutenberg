@@ -10559,17 +10559,30 @@ body {
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  z-index: 10000;
-  padding: 8px 15px;
+  z-index: 100;
+  padding: 0 15px;
   background: #30363D;
   border-radius: 10px; }
   .Tss-font-style .tss-popup-btn {
     width: 24px;
-    height: 24px;
+    height: 32px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .Tss-font-style .tss-popup-btn .text {
+      line-height: 1;
+      font-size: 13px;
+      color: #fff; }
+    .Tss-font-style .tss-popup-btn .mask-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      opacity: 0; }
   .Tss-font-style * {
     flex-shrink: 0; }
   .Tss-font-style .hover-spread {
@@ -10578,7 +10591,10 @@ body {
     align-items: center;
     opacity: .4;
     transition: opacity .4s;
-    margin-right: 5px; }
+    margin-right: 5px;
+    position: relative; }
+    .Tss-font-style .hover-spread:last-of-type {
+      margin-right: 0; }
     .Tss-font-style .hover-spread:hover {
       opacity: 1; }
     .Tss-font-style .hover-spread.active {
@@ -10587,9 +10603,9 @@ body {
     position: absolute;
     left: 0;
     top: 100%;
-    padding: 10px;
+    padding: 14px 10px 10px;
     background: #fff;
-    width: 340px;
+    width: 260px;
     background: #fff;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
     border-radius: 10px; }
@@ -10600,5 +10616,83 @@ body {
       cursor: pointer;
       border: 1px solid #fff;
       cursor: pointer; }
+      .Tss-font-style .color-palette .color-block[data-color="#FFFFFF"] {
+        outline: 1px solid #D8D8D8;
+        outline-offset: -2px; }
       .Tss-font-style .color-palette .color-block.active {
         border-color: #6C80FF; }
+        .Tss-font-style .color-palette .color-block.active[data-color="#FFFFFF"] {
+          outline: none; }
+    .Tss-font-style .color-palette .color-blocks-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap; }
+    .Tss-font-style .color-palette .expand-more {
+      padding: 7px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -7px;
+      cursor: pointer; }
+      .Tss-font-style .color-palette .expand-more img {
+        height: 6px; }
+        .Tss-font-style .color-palette .expand-more img.rotate {
+          transform: rotate(180deg); }
+    .Tss-font-style .color-palette .many-color-container {
+      margin-bottom: 14px; }
+      .Tss-font-style .color-palette .many-color-container::after {
+        content: '';
+        display: block;
+        clear: both; }
+  .Tss-font-style .font-size-menu {
+    padding: 12px 10px;
+    background: #fff;
+    position: absolute;
+    top: -20px;
+    left: -28px;
+    text-align: right;
+    z-index: 101;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+    border-radius: 4px; }
+    .Tss-font-style .font-size-menu .font-size-menu-item {
+      line-height: 1.5;
+      cursor: pointer; }
+
+.poptip {
+  position: relative;
+  z-index: 101; }
+  .poptip::before, .poptip::after {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s ease .2s; }
+  .poptip::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #30363D transparent transparent transparent;
+    left: calc(50% - 8px);
+    top: 0px;
+    transform: translateX(0%) translateY(-10px); }
+  .poptip::after {
+    font-size: 14px;
+    color: #fff;
+    content: attr(aria-controls);
+    position: absolute;
+    padding: 4px 12px;
+    white-space: nowrap;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    margin-bottom: -1px;
+    transform: translateX(-50%) translateY(-10px);
+    background: #30363D; }
+  .poptip:hover::before, .poptip:hover::after {
+    visibility: visible;
+    opacity: 1; }
