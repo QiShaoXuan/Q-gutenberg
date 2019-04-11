@@ -71,11 +71,9 @@ class ColorPalette extends React.Component {
           />
         </div>
         {manyColors ? (<div>
-          <div className="expand-more"
+          <div className={`expand-more ${expand ? 'expaned' : ''}`}
             onClick={this.toggleMoreColors}>
-            <img
-              src="https://i.loli.net/2019/04/11/5caf0ecda2af7.png"
-              className={`${expand ? 'rotate' : ''}`}/>
+            <img src="https://i.loli.net/2019/04/11/5caf0ecda2af7.png"/>
           </div>
           <div
             style={{ display: expand ? 'block' : 'none' }}

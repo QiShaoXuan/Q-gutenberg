@@ -10636,16 +10636,16 @@ body {
       align-items: center;
       margin-bottom: -7px;
       cursor: pointer; }
+      .Tss-font-style .color-palette .expand-more.expaned {
+        margin-bottom: 0; }
+        .Tss-font-style .color-palette .expand-more.expaned img {
+          transform: rotate(180deg); }
       .Tss-font-style .color-palette .expand-more img {
         height: 6px; }
-        .Tss-font-style .color-palette .expand-more img.rotate {
-          transform: rotate(180deg); }
-    .Tss-font-style .color-palette .many-color-container {
-      margin-bottom: 14px; }
-      .Tss-font-style .color-palette .many-color-container::after {
-        content: '';
-        display: block;
-        clear: both; }
+    .Tss-font-style .color-palette .many-color-container::after {
+      content: '';
+      display: block;
+      clear: both; }
   .Tss-font-style .font-size-menu {
     padding: 12px 10px;
     background: #fff;

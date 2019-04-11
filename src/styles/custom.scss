@@ -108,15 +108,17 @@ $popupBg: #30363D;
       align-items: center;
       margin-bottom:-7px;
       cursor: pointer;
-      img{
-        height:6px;
-        &.rotate{
+      &.expaned{
+        margin-bottom: 0;
+        img{
           transform: rotate(180deg);
         }
       }
+      img{
+        height:6px;
+      }
     }
     .many-color-container{
-      margin-bottom:14px;
       &::after{
         content:'';
         display: block;
