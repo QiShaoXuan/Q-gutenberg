@@ -1,6 +1,6 @@
 import './scripts/data';
 // import './scripts/inject';
-import './overrides/js/index'
+import './overrides/js/index';
 import './scripts/api-fetch';
 
 // extensions:
@@ -15,12 +15,15 @@ import cn from './i18n/gutenberg-cn';
 import { setLocaleData } from '@wordpress/i18n';
 import * as data from '@wordpress/data';
 
-// import './plugin/color/index'
-import './plugin/sub-sup/index'
+import './plugin/popup/index'
+import './plugin/color/index'
+// import './plugin/sub-sup/index';
+import {overrideCoreBlock} from './untils'
+
 if (data.select('core/edit-post').isFeatureActive('focusMode') === false) {
   data.dispatch('core/edit-post').toggleFeature('focusMode');
 }
-setLocaleData(cn);
+// setLocaleData(cn);
 // -------------------- END - i18n ----------------------
 
 // -------------------- content ----------------------
@@ -33,14 +36,14 @@ import AlignmentToolbar from './toolbar/alignment';
 
 // -------------------- END - toolbar ----------------------
 // -------------------- paragraph ----------------------
-import {ParagraphSettings} from './plugin/paragraph/index'
+import { ParagraphSettings } from './plugin/paragraph/index';
 
 // -------------------- END - paragraph ----------------------
 // -------------------- advanced ----------------------
-const { registerFormatType, applyFormat, removeFormat, getActiveFormat,toggleFormat } = window.wp.richText;
+const { registerFormatType, applyFormat, removeFormat, getActiveFormat, toggleFormat } = window.wp.richText;
 const { RichTextToolbarButton, RichTextShortcut } = window.wp.editor;
 
-const { createElement, Fragment } = window.wp.element
+const { createElement, Fragment } = window.wp.element;
 // -------------------- END - advanced ----------------------
 import Blocks from './scripts/blocks';
 import { removeFilter } from '@wordpress/hooks';
@@ -54,6 +57,7 @@ import {
 
 const { editPost, element, domReady } = window.wp;
 const { unmountComponentAtNode } = element;
+
 
 export default class extends React.Component {
   static propTypes = {
@@ -179,63 +183,34 @@ export default class extends React.Component {
       isRTL: false,
       autosaveInterval: 0,
       postLock: {
-        isLocked: false,
+        isLocked: false
       },
       canPublish: false,
       canSave: true,
       canAutosave: true,
-      mediaLibrary: true,
+      mediaLibrary: true
     };
 
     // unmount before register:
     domReady(() => {
       editPost.initializeEditor('editor', 'page', 1, settings, {});
 
+      // -------------------- icon ----------------------
+      var el = wp.element.createElement;
+      var img = el('img',{
+        src:'https://qishaoxuan.github.io/css_tricks/images/favicon.png',
+        width: 20,
+        height: 20,
+      })
+      overrideCoreBlock('core/paragraph','icon',img)
+      overrideCoreBlock('core/paragraph','edit',(params) => {
 
-      // -------------------- font ----------------------
+      })
+      // -------------------- END - icon ----------------------
+// -------------------- override ----------------------
 
-      const { registerBlockType } = wp.blocks;
+// -------------------- END - override ----------------------
 
-      const {
-        RichText,
-        BlockControls
-      } = wp.editor;
-      // -------------------- END - font ----------------------
-
-      const name = 'core/italic';
-
-      export const italic = {
-        name,
-        title: __( 'Italic' ),
-        tagName: 'em',
-        className: null,
-        edit( { isActive, value, onChange } ) {
-          const onToggle = () => onChange( toggleFormat( value, { type: name } ) );
-
-          return (
-            <Fragment>
-              <RichTextShortcut
-                type="primary"
-                character="i"
-                onUse={ onToggle }
-              />
-              <RichTextToolbarButton
-                name="italic"
-                icon="editor-italic"
-                title={ __( 'Italic' ) }
-                onClick={ onToggle }
-                isActive={ isActive }
-                shortcutType="primary"
-                shortcutCharacter="i"
-              />
-              <UnstableRichTextInputEvent
-                inputType="formatItalic"
-                onInput={ onToggle }
-              />
-            </Fragment>
-          );
-        },
-      };
       // -------------------- toolbar ----------------------
       var MyCustomButton = function(props) {
         return wp.element.createElement(
@@ -260,49 +235,6 @@ export default class extends React.Component {
           edit: MyCustomButton
         }
       );
-
-
-      // [
-      //   {
-      //     name: 'sup',
-      //     title: 'Superscript',
-      //     character: '.'
-      //   },
-      //   {
-      //     name: 'sub',
-      //     title: 'Subscript',
-      //     character: ','
-      //   }
-      // ].forEach(({ name, title, character, icon }) => {
-      //   const type = `advanced/${name}`
-      //
-      //   registerFormatType(type, {
-      //     title,
-      //     tagName: name,
-      //     className: null,
-      //     edit ({ isActive, value, onChange }) {
-      //       const onToggle = () => onChange(toggleFormat(value, { type }))
-      //
-      //       return (
-      //         createElement(Fragment, null,
-      //           createElement(RichTextShortcut, {
-      //             type: 'primary',
-      //             character,
-      //             onUse: onToggle
-      //           }),
-      //           createElement(RichTextToolbarButton, {
-      //             title,
-      //             onClick: onToggle,
-      //             isActive,
-      //             shortcutType: 'primary',
-      //             shortcutCharacter: character,
-      //             className: `toolbar-button-with-text toolbar-button__advanced-${name}`
-      //           })
-      //         )
-      //       )
-      //     }
-      //   })
-      // })
 
 
       // -------------------- END - toolbar ----------------------

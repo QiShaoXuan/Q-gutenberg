@@ -27,7 +27,8 @@ const { InspectorControls, PanelColorSettings } = window.wp.editor;
       if (isActive) {
         const activeFormat = getActiveFormat(value, type);
         const style = activeFormat.attributes.style;
-
+        
+        
         activeColor = style.replace(new RegExp(`^${name}:\\s*`), '');
       }
 
