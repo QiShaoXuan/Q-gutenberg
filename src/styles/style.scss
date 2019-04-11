@@ -75,20 +75,7 @@
   content: '\e999';
 }
 
-.wp-block-cgb-block-dynamic-block {
-  background: red;
-  border: 0.2rem solid black;
-  color:black;
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 2rem;
-}
+@import './custom.scss';
 
-.Tss-font-style{
-  background: #fff;
-  transition: all .4s;
-  display: flex;
-  justify-content: flex-start;align-items: center;
-  border:1px solid red;
-}
+
 
