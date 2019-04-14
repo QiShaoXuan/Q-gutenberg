@@ -9,6 +9,8 @@ class FontSizeMenu extends React.Component {
   }
 
   setMenu = (fontsize) => {
+    const {value} = this.props
+
     return fontsize.map((size) => <div
       onClick={(e) => {
         e.stopPropagation();
@@ -16,7 +18,10 @@ class FontSizeMenu extends React.Component {
         this.props.onChange(size);
       }}
       style={{ 'font-size': `${size}px` }}
-      className="font-size-menu-item">{size}px</div>);
+      className={`font-size-menu-item ${value == size?'active':''}`}>
+      <img src="https://i.loli.net/2019/04/11/5caf0ecda4477.png" />
+      <span>{size}px</span>
+    </div>);
   };
 
   render() {

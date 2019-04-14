@@ -4,11 +4,11 @@ $popupBg: #30363D;
 // 隐藏原生的 toolbar
 
 .block-editor-format-toolbar {
-  display: none;
+  display: none!important;
 }
 
 .editor-format-toolbar__selection-position.block-editor-format-toolbar__selection-position {
-  z-index: 100;
+  z-index: 100!important;
 }
 
 .Tss-font-style {
@@ -131,7 +131,7 @@ $popupBg: #30363D;
     background: #fff;
     position: absolute;
     top:-20px;
-    left:-28px;
+    left:-60px;
     text-align: right;
     z-index: 101;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
@@ -140,7 +140,18 @@ $popupBg: #30363D;
     .font-size-menu-item{
       line-height: 1.5;
       cursor: pointer;
-
+      width:64px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img{
+        visibility: hidden;
+      }
+      &.active{
+        img{
+          visibility: visible;
+        }
+      }
     }
   }
 }
