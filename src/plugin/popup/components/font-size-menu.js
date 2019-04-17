@@ -1,4 +1,5 @@
 import React from 'react';
+import {Tick} from '../icons';
 
 const fontsize = [12, 14, 15, 16, 17, 18, 20];
 
@@ -19,7 +20,7 @@ class FontSizeMenu extends React.Component {
       }}
       style={{ 'font-size': `${size}px` }}
       className={`font-size-menu-item ${value == size?'active':''}`}>
-      <img src="https://i.loli.net/2019/04/11/5caf0ecda4477.png" />
+      <Tick />
       <span>{size}px</span>
     </div>);
   };

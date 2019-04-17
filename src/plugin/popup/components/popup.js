@@ -3,10 +3,9 @@ const { registerFormatType, getActiveFormat, applyFormat } = window.wp.richText;
 import ColorPalette from './color-palette';
 import IconButton from './icon-btn';
 import FontSizeMenu from './font-size-menu';
-import { colors, manyColors } from './colors';
+import { colors, manyColors,bgColors } from './colors';
 import { styleObjToStr } from '../untils';
-
-
+import * as Icons from '../icons/index'
 export default class Popup extends React.Component {
   constructor() {
     super();
@@ -24,7 +23,7 @@ export default class Popup extends React.Component {
 
   btnClick = (open) => {
     this.setState({
-      open: open
+      open: this.state.open === open ? '' : open
     });
   };
 
@@ -36,12 +35,18 @@ export default class Popup extends React.Component {
       delete styles[key];
     }
 
-    this.props.onChange(applyFormat(this.props.value, {
-      type: this.props.formatType,
-      attributes: {
-        style: styleObjToStr(styles)
-      }
-    }));
+    this.props.onChange(
+      applyFormat(this.props.value, {
+        type: this.props.formatType,
+        attributes: {
+          style: styleObjToStr(styles)
+        }
+      })
+    );
+
+    this.setState({
+      open: ''
+    });
   };
 
   toggleStyle = (name, trueValue, falseValue) => {
@@ -61,57 +66,57 @@ export default class Popup extends React.Component {
     const fontsize = activeStyle['font-size'] ? activeStyle['font-size'].split('px')[0] : '20';
 
     return (
-      <div className="Tss-font-style"
-        style={{ opacity: show ? 1 : 0 }}>
+      <div className="Tss-font-style" style={{ opacity: show ? 1 : 0 }}>
         {/* ---------- 字体大小 ----------*/}
-        <div
-          className={`hover-spread ${open === 'font-size' ? 'active' : ''}`}>
+        <div className={`hover-spread ${open === 'font-size' ? 'active' : ''}`}>
           <IconButton
-            tip="字号大小可保留至微信平台"
-            icon={<img
-              src="https://i.loli.net/2019/04/11/5caf249ddb483.png"
-              style={{ marginLeft: '3px' }}/>}
+            className="font-size-btn"
+            tip="字号与微信编辑器相同"
+            icon={<Icons.Two_arrow_on/>}
             onClick={() => this.btnClick('font-size')}
             text={fontsize}
           />
-          {open === 'font-size' ?
+          {open === 'font-size' ? (
             <FontSizeMenu
               value={fontsize}
-              onChange={(fontsize) => this.setStyle('font-size', `${fontsize}px`)}/> : null}
+              onChange={(fontsize) => this.setStyle('font-size', `${fontsize}px`)}
+            />
+          ) : null}
         </div>
         {/* ---------- 字体加粗 ----------*/}
-        <div
-          className={`hover-spread ${activeStyle['font-weight'] === 'bold' ? 'active' : ''}`}>
+        <div className={`hover-spread ${activeStyle['font-weight'] === 'bold' ? 'active' : ''}`}>
           <IconButton
             tip="加粗"
             onClick={() => this.toggleStyle('font-weight', 'bold', 'normal')}
-            icon="https://i.loli.net/2019/04/11/5caeca7d4f017.png"/>
+            icon={<Icons.B_on/>}
+          />
         </div>
         {/* ---------- 斜体 ----------*/}
-        <div
-          className={`hover-spread ${activeStyle['font-style'] === 'italic' ? 'active' : ''}`}>
+        <div className={`hover-spread ${activeStyle['font-style'] === 'italic' ? 'active' : ''}`}>
           <IconButton
             tip="斜体"
             onClick={() => this.toggleStyle('font-style', 'italic', 'normal')}
-            icon="https://i.loli.net/2019/04/11/5caeca7d504b7.png"/>
+            icon={<Icons.I_on/>}
+          />
         </div>
         {/* ---------- 下划线 ----------*/}
         <div
-          className={`hover-spread ${activeStyle['text-decoration'] === 'underline' ? 'active' : ''}`}>
+          className={`hover-spread ${
+            activeStyle['text-decoration'] === 'underline' ? 'active' : ''
+          }`}>
           <IconButton
             tip="下划线"
             onClick={() => this.toggleStyle('text-decoration', 'underline', 'none')}
-            icon="https://i.loli.net/2019/04/11/5caeca7d4eb7c.png"
+            icon={<Icons.U_on/>}
           />
         </div>
 
         {/* ---------- 字体颜色 ----------*/}
-        <div
-          className={`hover-spread ${open === 'color' ? 'active' : ''}`}>
+        <div className={`hover-spread ${open === 'color' ? 'active' : ''}`}>
           <IconButton
             tip="字体颜色"
             onClick={() => this.btnClick('color')}
-            icon="https://i.loli.net/2019/04/11/5caeca7d4eb88.png"
+            icon={<Icons.A_on/>}
           />
           <ColorPalette
             show={open === 'color' ? true : false}
@@ -122,21 +127,21 @@ export default class Popup extends React.Component {
           />
         </div>
         {/* ---------- 背景颜色 ----------*/}
-        <div className="hover-spread"
+        <div
+          className="hover-spread"
           className={`hover-spread ${open === 'background' ? 'active' : ''}`}>
           <IconButton
             tip="背景颜色"
             onClick={() => this.btnClick('background')}
-            icon="https://i.loli.net/2019/04/11/5caecf869903e.png"
+            icon={<Icons.T_on/>}
           />
 
           <ColorPalette
             show={open === 'background' ? true : false}
-            colors={colors}
+            colors={bgColors}
             value={activeStyle.background ? activeStyle.background : ''}
             onChange={(color) => this.styleChange('background', color)}
           />
-
         </div>
       </div>
     );

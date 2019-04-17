@@ -10,13 +10,16 @@ const type = 'tss-popup/font';
 
 registerFormatType(type, {
   title: 'Tss Inline popup',
-  tagName: 'span',
+  tagName: 'strong',
   className: 'color',
   attributes: {
     style: 'style'
   },
   isDefault: true,
+
   edit({ isActive, value, onChange }) {
+    console.log('getActiveFormat(value, type)',getActiveFormat(value, type))
+    
     let activeStyle = {};
     if (isActive) {
       const activeFormat = getActiveFormat(value, type);

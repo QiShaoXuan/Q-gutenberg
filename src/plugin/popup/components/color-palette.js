@@ -1,5 +1,6 @@
 import React from 'react';
 import IconButton from './icon-btn';
+import {Picker,Cancel} from '../icons';
 
 const { ColorPicker, Dropdown } = wp.components;
 
@@ -45,12 +46,13 @@ class ColorPalette extends React.Component {
             // contentClassName="components-color-palette__picker"
             renderToggle={({ isOpen, onToggle }) => (
               <IconButton
+                className="pallette-btn"
                 aria-expanded={isOpen}
                 onClick={onToggle}
                 tip="自定义颜色"
                 width={40}
                 height={40}
-                icon="https://i.loli.net/2019/04/11/5caf052657805.png"
+                icon={<Picker/>}
               />
             )}
             renderContent={() => (
@@ -63,11 +65,12 @@ class ColorPalette extends React.Component {
             )}
           />
           <IconButton
+            className="pallette-btn"
             tip="清空颜色"
             onClick={() => this.colorChange('')}
             width={40}
             height={40}
-            icon="https://i.loli.net/2019/04/11/5caf052659229.png"
+            icon={<Cancel/>}
           />
         </div>
         {manyColors ? (<div>

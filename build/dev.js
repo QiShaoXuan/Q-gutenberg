@@ -13,6 +13,7 @@ module.exports = merge(baseConfig, {
   },
   devServer: {
     host: 'localhost',
+    port:new Date().getFullYear(),
     hot:true
   }
 });
