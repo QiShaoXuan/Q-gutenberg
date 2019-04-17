@@ -10,8 +10,8 @@ const type = 'tss-popup/font';
 
 registerFormatType(type, {
   title: 'Tss Inline popup',
-  tagName: 'strong',
-  className: 'color',
+  tagName: 'span',
+  className: 'tss-popup',
   attributes: {
     style: 'style'
   },
