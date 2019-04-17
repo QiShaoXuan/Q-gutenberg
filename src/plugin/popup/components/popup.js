@@ -66,7 +66,7 @@ export default class Popup extends React.Component {
     const fontsize = activeStyle['font-size'] ? activeStyle['font-size'].split('px')[0] : '20';
 
     return (
-      <div className="Tss-font-style" style={{ opacity: show ? 1 : 0 }}>
+      <div className="Tss-font-style" style={{ opacity: show ? 1 : 0 }} onMouseMove={(e)=>e.stopPropagation()}>
         {/* ---------- 字体大小 ----------*/}
         <div className={`hover-spread ${open === 'font-size' ? 'active' : ''}`}>
           <IconButton
