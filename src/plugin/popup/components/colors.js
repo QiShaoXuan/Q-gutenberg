@@ -11,8 +11,6 @@ export const colors = [
   '#FFFFFF'
 ];
 
-
-
 export const manyColors = [
   '#000064',
   '#28547C',
