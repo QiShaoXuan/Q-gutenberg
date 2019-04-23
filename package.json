@@ -66,9 +66,10 @@
     "@wordpress/viewport": "^2.3.0",
     "@wordpress/wordcount": "^2.2.0",
     "gutenberg-i18n": "git+ssh://git@gitlab.finxos.com:tu-editor/gutenberg-i18n.git",
+    "gutenberg-styles": "git+ssh://git@gitlab.finxos.com:tu-editor/gutenberg-styles.git",
     "noop": "github:afeiship/noop",
-    "po2json": "^1.0.0-alpha",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "tinymce": "^5.0.3"
   },
   "devDependencies": {
     "@wordpress/babel-plugin-makepot": "^3.0.0",

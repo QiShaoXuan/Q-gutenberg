@@ -4,13 +4,12 @@ $popupBg: #30363D;
 // 隐藏原生的 toolbar
 
 .block-editor-format-toolbar {
-  display: none!important;
+  //display: none!important;
 }
 
 .editor-format-toolbar__selection-position.block-editor-format-toolbar__selection-position {
   z-index: 100!important;
 }
-
 .Tss-font-style {
   transition: all .4s;
   display: flex;
