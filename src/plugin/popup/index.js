@@ -1,40 +1,27 @@
 import { registerFormatType, getActiveFormat } from '@wordpress/rich-text';
 import PositionedAtSelection from '@wordpress/components/build/positioned-at-selection';
-import { styleStrToObj } from './untils';
-import Popup from './components/popup';
+import { typePrefix } from './formats';
+
 import './styles/index.scss';
+import fommats from './components/index';
 
-const type = 'tss-popup/font';
+fommats.map((fromat) => registerFormatType(fromat.register.type, fromat.register));
 
-registerFormatType(type, {
+registerFormatType(`${typePrefix}/popup`, {
   title: 'Tss Inline popup',
   tagName: 'span',
   className: 'tss-popup',
-  attributes: {
-    style: 'style',
-    tag:''
-  },
-  isDefault: true,
-
   edit(params) {
-    const { isActive, value, onChange } = params
-    console.log(params)
-    
-    let activeStyle = {};
-    if (isActive) {
-      const activeFormat = getActiveFormat(value, type);
-      activeStyle = styleStrToObj(activeFormat.attributes.style);
-    }
+    const { value } = params;
 
     return value.end - value.start > 0 ? (
       <PositionedAtSelection key={`${value.end}${value.start}`}>
-        <Popup
-          onChange={onChange}
-          isActive={isActive}
-          value={value}
-          activeStyle={activeStyle}
-          formatType={type}
-        />
+        <div
+          className="Tss-font-style"
+          style={{ opacity: 1 }}
+          onMouseMove={(e) => e.stopPropagation()}>
+          {fommats.map((format) => format.render(params))}
+        </div>
       </PositionedAtSelection>
     ) : null;
   }

@@ -1,4 +1,5 @@
-export const colors = [
+export const  defaultColor ='#30363d'
+export const fontColor = [
   '#0059FF',
   '#119597',
   '#EFB738',
@@ -7,7 +8,7 @@ export const colors = [
   '#881D96',
   '#000064',
   '#8B8B8B',
-  '#30363d',
+  defaultColor,
   '#FFFFFF'
 ];
 

@@ -1,11 +1,11 @@
-const { registerFormatType, getActiveFormat, applyFormat } = window.wp.richText;
+const { applyFormat, removeFormat } = window.wp.richText;
 
-import ColorPalette from './color-palette';
-import IconButton from './icon-btn';
-import FontSizeMenu from './font-size-menu';
-import { colors, manyColors,bgColors } from './colors';
-import { styleObjToStr } from '../untils';
-import * as Icons from '../icons/index'
+import Index from './color-palette/color-palette';
+import IconButton from './icon-button/icon-btn';
+import FontSizeMenu from './fontsize/font-size-menu';
+import { index, manyColors, bgColors } from './colors/colors';
+import { styleObjToStr, handleFormat } from '../untils';
+import * as Icons from '../icons/index';
 export default class Popup extends React.Component {
   constructor() {
     super();
@@ -35,11 +35,14 @@ export default class Popup extends React.Component {
       delete styles[key];
     }
 
+    const type = this.props.formatType;
+    const style = styleObjToStr(styles);
+
     this.props.onChange(
       applyFormat(this.props.value, {
-        type: this.props.formatType,
+        type: 'tss-strong/strong',
         attributes: {
-          style: styleObjToStr(styles)
+          style: style
         }
       })
     );
@@ -66,13 +69,16 @@ export default class Popup extends React.Component {
     const fontsize = activeStyle['font-size'] ? activeStyle['font-size'].split('px')[0] : '20';
 
     return (
-      <div className="Tss-font-style" style={{ opacity: show ? 1 : 0 }} onMouseMove={(e)=>e.stopPropagation()}>
+      <div
+        className="Tss-font-style"
+        style={{ opacity: show ? 1 : 0 }}
+        onMouseMove={(e) => e.stopPropagation()}>
         {/* ---------- 字体大小 ----------*/}
         <div className={`hover-spread ${open === 'font-size' ? 'active' : ''}`}>
           <IconButton
             className="font-size-btn"
             tip="字号与微信编辑器相同"
-            icon={<Icons.Two_arrow_on/>}
+            icon={<Icons.Two_arrow_on />}
             onClick={() => this.btnClick('font-size')}
             text={fontsize}
           />
@@ -88,7 +94,7 @@ export default class Popup extends React.Component {
           <IconButton
             tip="加粗"
             onClick={() => this.toggleStyle('font-weight', 'bold', 'normal')}
-            icon={<Icons.B_on/>}
+            icon={<Icons.B_on />}
           />
         </div>
         {/* ---------- 斜体 ----------*/}
@@ -96,7 +102,7 @@ export default class Popup extends React.Component {
           <IconButton
             tip="斜体"
             onClick={() => this.toggleStyle('font-style', 'italic', 'normal')}
-            icon={<Icons.I_on/>}
+            icon={<Icons.I_on />}
           />
         </div>
         {/* ---------- 下划线 ----------*/}
@@ -107,20 +113,16 @@ export default class Popup extends React.Component {
           <IconButton
             tip="下划线"
             onClick={() => this.toggleStyle('text-decoration', 'underline', 'none')}
-            icon={<Icons.U_on/>}
+            icon={<Icons.U_on />}
           />
         </div>
 
         {/* ---------- 字体颜色 ----------*/}
         <div className={`hover-spread ${open === 'color' ? 'active' : ''}`}>
-          <IconButton
-            tip="字体颜色"
-            onClick={() => this.btnClick('color')}
-            icon={<Icons.A_on/>}
-          />
-          <ColorPalette
+          <IconButton tip="字体颜色" onClick={() => this.btnClick('color')} icon={<Icons.A_on />} />
+          <Index
             show={open === 'color' ? true : false}
-            colors={colors}
+            colors={index}
             manyColors={manyColors}
             value={activeStyle.color ? activeStyle.color : ''}
             onChange={(color) => this.styleChange('color', color)}
@@ -133,10 +135,10 @@ export default class Popup extends React.Component {
           <IconButton
             tip="背景颜色"
             onClick={() => this.btnClick('background')}
-            icon={<Icons.T_on/>}
+            icon={<Icons.T_on />}
           />
 
-          <ColorPalette
+          <Index
             show={open === 'background' ? true : false}
             colors={bgColors}
             value={activeStyle.background ? activeStyle.background : ''}

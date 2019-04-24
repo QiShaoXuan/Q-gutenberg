@@ -1,5 +1,5 @@
 import React from 'react';
-import {Tick} from '../icons';
+import {Tick} from '../../icons/index';
 
 const fontsize = [12, 14, 15, 16, 17, 18, 20];
 
