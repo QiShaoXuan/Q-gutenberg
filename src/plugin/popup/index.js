@@ -1,7 +1,7 @@
 import React from 'react';
 import { registerFormatType, getActiveFormat } from '@wordpress/rich-text';
 import PositionedAtSelection from '@wordpress/components/build/positioned-at-selection';
-import { typePrefix } from './formats';
+import { typePrefix } from './formats.js';
 import fommats from './components/index';
 
 import './styles/index.scss';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { toggleFormat, getActiveFormat } from '@wordpress/rich-text';
-import { typePrefix } from '../../formats';
-import IconButton from '../icon-button/index';
-import { B_on } from '../icons/index';
+import { typePrefix } from '../../formats.js';
+import IconButton from '../icon-button/index.js';
+import { B_on } from '../icons/index.js';
 const formatType = 'bold';
 const type = `${typePrefix}/${formatType}`;
 

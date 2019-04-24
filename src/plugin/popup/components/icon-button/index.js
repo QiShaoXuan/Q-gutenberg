@@ -1,6 +1,10 @@
 import React from 'react';
 import './index.scss';
-class IconButton extends React.Component {
+
+export default class IconButton extends React.Component {
+  constructor(){
+    super()
+  }
   render() {
     const { onClick, icon, tip, width, height, text, className } = this.props;
     return (
@@ -21,4 +25,4 @@ class IconButton extends React.Component {
   }
 }
 
-export default IconButton;
+console.log('IconButton',IconButton)

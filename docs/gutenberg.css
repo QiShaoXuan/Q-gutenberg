@@ -1,6 +1,31 @@
-.block-editor-format-toolbar {
-  display: none !important; }
-
+.tss-popup-btn {
+  width: 24px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 3px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.4; }
+  .tss-popup-btn:hover, .tss-popup-btn.active {
+    opacity: 1; }
+  .tss-popup-btn svg {
+    width: 20px;
+    height: 20px; }
+  .tss-popup-btn .text {
+    line-height: 1;
+    font-size: 13px;
+    color: #fff; }
+  .tss-popup-btn .mask-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
 .editor-format-toolbar__selection-position.block-editor-format-toolbar__selection-position {
   z-index: 100 !important; }
 
@@ -14,31 +39,6 @@
   padding: 0 15px;
   background: #30363D;
   border-radius: 16px; }
-  .Tss-font-style .tss-popup-btn {
-    width: 24px;
-    height: 32px;
-    display: inline-flex;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0 3px;
-    align-items: center;
-    cursor: pointer;
-    position: relative; }
-    .Tss-font-style .tss-popup-btn svg {
-      width: 20px;
-      height: 20px; }
-    .Tss-font-style .tss-popup-btn .text {
-      line-height: 1;
-      font-size: 13px;
-      color: #fff; }
-    .Tss-font-style .tss-popup-btn .mask-img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 100;
-      width: 100%;
-      height: 100%;
-      opacity: 0; }
   .Tss-font-style .font-size-btn svg {
     width: 15px;
     height: auto; }
@@ -51,15 +51,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    opacity: .4;
     transition: opacity .4s;
     position: relative; }
     .Tss-font-style .hover-spread:last-of-type {
       margin-right: 0; }
-    .Tss-font-style .hover-spread:hover {
-      opacity: 1; }
-    .Tss-font-style .hover-spread.active {
-      opacity: 1; }
   .Tss-font-style .color-palette {
     position: absolute;
     left: 0;
@@ -99,37 +94,14 @@
       cursor: pointer; }
       .Tss-font-style .color-palette .expand-more.expaned {
         margin-bottom: 0; }
-        .Tss-font-style .color-palette .expand-more.expaned img {
+        .Tss-font-style .color-palette .expand-more.expaned svg {
           transform: rotate(180deg); }
-      .Tss-font-style .color-palette .expand-more img {
-        height: 6px; }
+      .Tss-font-style .color-palette .expand-more svg {
+        height: 20px; }
     .Tss-font-style .color-palette .many-color-container::after {
       content: '';
       display: block;
       clear: both; }
-  .Tss-font-style .font-size-menu {
-    padding: 12px 10px;
-    background: #fff;
-    position: absolute;
-    top: -20px;
-    left: -60px;
-    text-align: right;
-    z-index: 101;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
-    border-radius: 4px; }
-    .Tss-font-style .font-size-menu .font-size-menu-item {
-      line-height: 1.5;
-      cursor: pointer;
-      width: 64px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
-      .Tss-font-style .font-size-menu .font-size-menu-item svg {
-        width: 15px;
-        height: 15px;
-        visibility: hidden; }
-      .Tss-font-style .font-size-menu .font-size-menu-item.active svg {
-        visibility: visible; }
 
 .poptip {
   position: relative;
@@ -167,6 +139,29 @@
   .poptip:hover::before, .poptip:hover::after {
     visibility: visible;
     opacity: 1; }
+.font-size-menu {
+  padding: 12px 10px;
+  background: #fff;
+  position: absolute;
+  top: -20px;
+  left: -60px;
+  text-align: right;
+  z-index: 101;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 4px; }
+  .font-size-menu .font-size-menu-item {
+    line-height: 1.5;
+    cursor: pointer;
+    width: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .font-size-menu .font-size-menu-item svg {
+      width: 15px;
+      height: 15px;
+      visibility: hidden; }
+    .font-size-menu .font-size-menu-item.active svg {
+      visibility: visible; }
 @charset "UTF-8";
 .block-editor-block-drop-zone {
   border: none;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { applyFormat, removeFormat } from '@wordpress/rich-text';
-import { typePrefix } from '../../formats';
-import IconButton from '../icon-button/index';
-import FontSizeMenu from './font-size-menu';
-import { Two_arrow_on } from '../icons/index';
+import { typePrefix } from '../../formats.js';
+import IconButton from '../icon-button/index.js';
+import FontSizeMenu from './font-size-menu.js';
+import { Two_arrow_on } from '../icons/index.js';
 
 import './index.scss';
 

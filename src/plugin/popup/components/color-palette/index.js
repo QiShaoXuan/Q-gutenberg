@@ -1,6 +1,6 @@
 import React from 'react';
 import IconButton from '../icon-button/index.js';
-import { Picker, Cancel, Arrow } from '../icons/index';
+import { Picker, Cancel, Arrow } from '../icons/index.js';
 import { ColorPicker, Dropdown } from '@wordpress/components';
 
 class Index extends React.Component {

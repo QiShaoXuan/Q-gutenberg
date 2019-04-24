@@ -1,10 +1,10 @@
 import React from 'react';
 import { applyFormat, removeFormat, getActiveFormat } from '@wordpress/rich-text';
 import { typePrefix } from '../../formats';
-import IconButton from '../icon-button/index';
-import { T_on } from '../icons/index';
-import ColorPalette from '../color-palette/index';
-import { bgColors } from '../colors/index';
+import IconButton from '../icon-button/index.js';
+import { T_on } from '../icons/index.js';
+import ColorPalette from '../color-palette/index.js';
+import { bgColors } from '../colors/index.js';
 
 const formatType = 'background-color';
 const type = `${typePrefix}/${formatType}`;
