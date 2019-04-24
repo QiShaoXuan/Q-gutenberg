@@ -1,0 +1,34 @@
+.tss-popup-btn {
+  width: 24px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 3px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.4;
+  &:hover,
+  &.active {
+    opacity: 1;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  .text {
+    line-height: 1;
+    font-size: 13px;
+    color: #fff;
+  }
+  .mask-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}

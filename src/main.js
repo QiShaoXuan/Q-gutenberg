@@ -15,7 +15,7 @@ import cn from './i18n/gutenberg-cn';
 import { setLocaleData } from '@wordpress/i18n';
 import * as data from '@wordpress/data';
 
-import './plugin/popup/index'
+import './plugin/format-bubble/index'
 import './plugin/color/index'
 // import './plugin/sub-sup/index';
 import {overrideCoreBlock} from './untils'
