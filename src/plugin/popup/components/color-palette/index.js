@@ -1,21 +1,17 @@
 import React from 'react';
 import IconButton from '../icon-button/index.js';
-import { Picker, Cancel } from '../../icons/index';
-
-const { ColorPicker, Dropdown } = wp.components;
+import { Picker, Cancel, Arrow } from '../icons/index';
+import { ColorPicker, Dropdown } from '@wordpress/components';
 
 class Index extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expand: false
-    };
-  }
+  state = {
+    expand: false
+  };
 
-  colorChange = (color) => {
+  colorChange = (color, isFromPicker = false) => {
     const propsColor = this.props.value;
     if (propsColor != color) {
-      this.props.onChange(color);
+      this.props.onChange(color, isFromPicker);
     }
   };
 
@@ -58,7 +54,7 @@ class Index extends React.Component {
             renderContent={() => (
               <ColorPicker
                 color={value}
-                onChangeComplete={(color) => this.colorChange(color.hex)}
+                onChangeComplete={(color) => this.colorChange(color.hex, true)}
                 disableAlpha
               />
             )}
@@ -77,7 +73,7 @@ class Index extends React.Component {
             <div
               className={`expand-more ${expand ? 'expaned' : ''}`}
               onClick={this.toggleMoreColors}>
-              <img src="https://i.loli.net/2019/04/11/5caf0ecda2af7.png" />
+              <Arrow />
             </div>
             <div
               style={{ display: expand ? 'block' : 'none' }}

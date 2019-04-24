@@ -2,25 +2,22 @@ import React from 'react';
 import { applyFormat, removeFormat, getActiveFormat } from '@wordpress/rich-text';
 import { typePrefix } from '../../formats';
 import IconButton from '../icon-button/index';
-import { T_on } from '../../icons/index';
+import { T_on } from '../icons/index';
 import ColorPalette from '../color-palette/index';
 import { bgColors } from '../colors/index';
 
 const formatType = 'background-color';
 const type = `${typePrefix}/${formatType}`;
 class BackgroundColor extends React.Component {
-  state = {
-    open: false
-  };
   handleBtnClick = () => {
-    this.setState({
-      open: true
-    });
+    const { popupChange, open } = this.props;
+    popupChange(open === type ? '' : type);
   };
-  styleChange = (color) => {
-    this.setState({
-      open: false
-    });
+  styleChange = (color, isFromPicker) => {
+    if (!isFromPicker) {
+      const { popupChange } = this.props;
+      popupChange('');
+    }
 
     this.applyFormat(color);
   };
@@ -39,22 +36,28 @@ class BackgroundColor extends React.Component {
     const { onChange, value } = this.props;
 
     onChange(removeFormat(value, type));
+    s;
   };
 
   render() {
-    const { open } = this.state;
+    const open = this.props.open === type;
     const format = getActiveFormat(this.props.value, type);
-    const color = format ? format.attributes.style.split(':')[1] : "";
+    const color = format ? format.attributes.style.split(':')[1] : '';
 
     return (
-      <div className={`hover-spread ${open === 'color' ? 'active' : ''}`}>
-        <IconButton tip="背景颜色" onClick={this.handleBtnClick} icon={<T_on />} />
+      <div className="hover-spread">
+        <IconButton
+          className={open ? 'active' : ''}
+          tip="背景颜色"
+          onClick={this.handleBtnClick}
+          icon={<T_on />}
+        />
         <ColorPalette
           show={open}
           colors={bgColors}
           value={color}
-          onChange={(color) => this.styleChange(color)}
-          onCancel={() => this.removeFormat()}
+          onChange={this.styleChange}
+          onCancel={this.removeFormat}
         />
       </div>
     );

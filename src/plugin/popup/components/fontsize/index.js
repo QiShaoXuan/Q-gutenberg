@@ -3,7 +3,7 @@ import { applyFormat, removeFormat } from '@wordpress/rich-text';
 import { typePrefix } from '../../formats';
 import IconButton from '../icon-button/index';
 import FontSizeMenu from './font-size-menu';
-import { Two_arrow_on } from '../../icons/index';
+import { Two_arrow_on } from '../icons/index';
 
 import './index.scss';
 
@@ -12,24 +12,20 @@ const type = `${typePrefix}/${formatType}`;
 const defaultFontsize = 20;
 
 class Fontsize extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      open: false,
-      fontsize: 20
-    };
-  }
+  state = {
+    fontsize: 20
+  };
   handleBtnClick = () => {
-    this.setState({
-      open: true
-    });
+    const { popupChange, open } = this.props;
+    popupChange(open === type ? '' : type);
   };
   fontsizeChange = (fontsize) => {
-    const { onChange, value } = this.props;
+    const { onChange, value, popupChange } = this.props;
+
+    popupChange('');
 
     this.setState({
-      fontsize: fontsize,
-      open: false
+      fontsize: fontsize
     });
 
     onChange(
@@ -45,10 +41,11 @@ class Fontsize extends React.Component {
   };
 
   render() {
-    const { open, fontsize } = this.state;
+    const { fontsize } = this.state;
+    const { open } = this.props;
 
     return (
-      <div className={`hover-spread ${open === 'font-size' ? 'active' : ''}`}>
+      <div className={`hover-spread`}>
         <IconButton
           className="font-size-btn"
           tip="字号与微信编辑器相同"
@@ -56,7 +53,7 @@ class Fontsize extends React.Component {
           onClick={this.handleBtnClick}
           text={fontsize}
         />
-        {open ? (
+        {open === type ? (
           <FontSizeMenu value={fontsize} onChange={(fontsize) => this.fontsizeChange(fontsize)} />
         ) : null}
       </div>

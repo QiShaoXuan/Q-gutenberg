@@ -2,25 +2,22 @@ import React from 'react';
 import { applyFormat, removeFormat, getActiveFormat } from '@wordpress/rich-text';
 import { typePrefix } from '../../formats';
 import IconButton from '../icon-button/index';
-import { A_on } from '../../icons/index';
+import { A_on } from '../icons/index';
 import ColorPalette from '../color-palette/index';
 import { fontColor, manyColors, defaultColor } from '../colors/index';
 
 const formatType = 'color';
 const type = `${typePrefix}/${formatType}`;
 class Color extends React.Component {
-  state = {
-    open:false
-  }
   handleBtnClick = () => {
-    this.setState({
-      open: true
-    });
+    const { popupChange ,open} = this.props;
+    popupChange(open === type?'':type);
   };
-  styleChange = (color) => {
-    this.setState({
-      open: false
-    });
+  styleChange = (color, isFromPicker) => {
+    if (!isFromPicker) {
+      const { popupChange } = this.props;
+      popupChange('');
+    }
 
     if (defaultColor === color) {
       this.removeFormat();
@@ -46,20 +43,25 @@ class Color extends React.Component {
   };
 
   render() {
-    const { open } = this.state;
+    const open = this.props.open === type;
     const format = getActiveFormat(this.props.value, type);
     const color = format ? format.attributes.style.split(':')[1] : defaultColor;
 
     return (
-      <div className={`hover-spread ${open === 'color' ? 'active' : ''}`}>
-        <IconButton tip="字体颜色" onClick={this.handleBtnClick} icon={<A_on />} />
+      <div className="hover-spread">
+        <IconButton
+          tip="字体颜色"
+          className={open ? 'active' : ''}
+          onClick={this.handleBtnClick}
+          icon={<A_on />}
+        />
         <ColorPalette
           show={open}
           colors={fontColor}
           manyColors={manyColors}
           value={color}
-          onChange={(color) => this.styleChange(color)}
-          onCancel={() => this.removeFormat()}
+          onChange={this.styleChange}
+          onCancel={this.removeFormat}
         />
       </div>
     );
