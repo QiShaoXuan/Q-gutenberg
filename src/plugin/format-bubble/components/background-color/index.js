@@ -72,9 +72,6 @@ export default {
     className: `tss-${formatType}`,
     attributes: {
       style: 'style'
-    },
-    edit() {
-      return null;
     }
   },
   render(props) {

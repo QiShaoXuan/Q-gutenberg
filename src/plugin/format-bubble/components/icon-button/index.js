@@ -24,5 +24,3 @@ export default class IconButton extends React.Component {
     );
   }
 }
-
-console.log('IconButton',IconButton)

@@ -31,10 +31,7 @@ export default {
     type: type,
     title: `tss-${formatType}`,
     tagName: `strong`,
-    className: `tss-${formatType}`,
-    edit() {
-      return null;
-    }
+    className: `tss-${formatType}`
   },
   render(props) {
     return <Bold {...props} />;

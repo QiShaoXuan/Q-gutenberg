@@ -36,10 +36,7 @@ export default {
     type: type,
     title: `tss-${formatType}`,
     tagName: `em`,
-    className: `tss-${formatType}`,
-    edit() {
-      return null;
-    }
+    className: `tss-${formatType}`
   },
   render(props) {
     return <Italic {...props} />;

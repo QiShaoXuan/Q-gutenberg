@@ -25,3 +25,6 @@ scss variables is in `/src/overrides/stylesheets`, it will build all scss file i
 
 TODO:
 - some word has not translate, may cause the js load, must not json file
+
+
+
