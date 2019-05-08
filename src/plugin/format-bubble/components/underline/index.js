@@ -24,7 +24,7 @@ class Underline extends React.Component {
     return (
       <div className="hover-spread">
         <IconButton
-          tip="斜体"
+          tip="下划线"
           className={isActive ? 'active' : ''}
           onClick={this.handleBtnClick}
           icon={<U_on />}

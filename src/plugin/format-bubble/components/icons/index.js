@@ -8,7 +8,12 @@ export const A = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>A</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-519.000000, -117.000000)"
@@ -33,7 +38,12 @@ export const A_on = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>A-on</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-519.000000, -210.000000)"
@@ -58,7 +68,12 @@ export const Arrow = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>arrow</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-180.000000, -336.000000)"
@@ -85,7 +100,12 @@ export const B = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>B</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-252.000000, -117.000000)"
@@ -109,7 +129,12 @@ export const B_on = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>B-on</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-252.000000, -210.000000)"
@@ -133,8 +158,16 @@ export const Cancel = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/svg">
     <title>cancel</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <G id="切图2" transform="translate(-594.000000, -321.000000)" fill="#CCCCCC">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
+      <G
+        id="切图2"
+        transform="translate(-594.000000, -321.000000)"
+        fill="#CCCCCC">
         <G id="Group-13" transform="translate(594.000000, 321.000000)">
           <polygon
             id="Rectangle"
@@ -159,7 +192,12 @@ export const I = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>I</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-338.000000, -117.000000)"
@@ -177,7 +215,10 @@ export const I = () => (
               transform="translate(36.000000, 12.000000) rotate(-90.000000) translate(-36.000000, -12.000000) "
               points="32.7626953 -3.33066907e-16 39.2373047 -3.33066907e-16 39.2373047 24 32.7626953 24"
             />
-            <polygon id="I" points="34.9563786 12 41.4339506 12 30.477572 51 24 51" />
+            <polygon
+              id="I"
+              points="34.9563786 12 41.4339506 12 30.477572 51 24 51"
+            />
           </G>
         </G>
       </G>
@@ -192,7 +233,12 @@ export const I_on = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>I-on</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-338.000000, -210.000000)"
@@ -210,7 +256,10 @@ export const I_on = () => (
               transform="translate(36.000000, 12.000000) rotate(-90.000000) translate(-36.000000, -12.000000) "
               points="32.7626953 -3.33066907e-16 39.2373047 -3.33066907e-16 39.2373047 24 32.7626953 24"
             />
-            <polygon id="I" points="34.9563786 12 41.4339506 12 30.477572 51 24 51" />
+            <polygon
+              id="I"
+              points="34.9563786 12 41.4339506 12 30.477572 51 24 51"
+            />
           </G>
         </G>
       </G>
@@ -225,7 +274,12 @@ export const Picker = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>picker</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G id="切图2" transform="translate(-474.000000, -321.000000)">
         <G id="Group-8" transform="translate(474.000000, 321.000000)">
           <G id="Group-12" transform="translate(0.000000, 3.000000)">
@@ -266,7 +320,12 @@ export const T = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>T</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-612.000000, -117.000000)"
@@ -294,7 +353,12 @@ export const T_on = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>T-on</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-612.000000, -210.000000)"
@@ -322,8 +386,16 @@ export const Two_arrow = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>two-arrow</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <G id="切图2" transform="translate(-168.000000, -117.000000)" fill="#979A9E">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
+      <G
+        id="切图2"
+        transform="translate(-168.000000, -117.000000)"
+        fill="#979A9E">
         <G id="Group-7" transform="translate(168.000000, 117.000000)">
           <G id="Group-10" transform="translate(21.000000, 12.000000)">
             <polygon id="Triangle" points="9 0 18 12 0 12" />
@@ -346,8 +418,16 @@ export const Two_arrow_on = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>B Copy 2</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <G id="切图2" transform="translate(-168.000000, -210.000000)" fill="#FFFFFF">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
+      <G
+        id="切图2"
+        transform="translate(-168.000000, -210.000000)"
+        fill="#FFFFFF">
         <G id="Group-7-Copy" transform="translate(168.000000, 210.000000)">
           <G id="Group-10" transform="translate(21.000000, 12.000000)">
             <polygon id="Triangle" points="9 0 18 12 0 12" />
@@ -370,7 +450,12 @@ export const U = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>U</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-432.000000, -117.000000)"
@@ -401,7 +486,12 @@ export const U_on = () => (
     version="1.1"
     xmlns="http://www.w3.org/2000/SVG">
     <title>U-on</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill="none"
+      fill-rule="evenodd">
       <G
         id="切图2"
         transform="translate(-432.000000, -210.000000)"
@@ -453,7 +543,12 @@ export const Tick = () => (
     height="200px"
     xmlns="http://www.w3.org/2000/SVG">
     <title>Tick</title>
-    <G id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd"     fill="#000000">
+    <G
+      id="Page-1"
+      stroke="none"
+      stroke-width="1"
+      fill-rule="evenodd"
+      fill="#000000">
       <Path
         d="M356.7 720.3c-12.8-15.2-10.8-37.9 4.4-50.7l441.2-370.2c15.2-12.8 37.9-10.8 50.7 4.4 12.8 15.2 10.8 37.9-4.4 50.7L407.4 724.7c-15.2 12.8-37.9 10.8-50.7-4.4z"
         p-id="17067"
@@ -465,3 +560,76 @@ export const Tick = () => (
     </G>
   </SVG>
 );
+
+export const BrushIcon = () => (
+  <svg
+    width="24px"
+    height="24px"
+    viewBox="0 0 24 24"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/SVG">
+    <G id="58" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <G
+        id="00-格式处理-素材列表"
+        transform="translate(-19.000000, -51.000000)">
+        <G
+          id="outline-format_paint-24px"
+          transform="translate(19.000000, 51.000000)">
+          <polygon id="Path" points="0 0 24 0 24 24 0 24" />
+          <Path
+            d="M16.5294118,4.8 L16.5294118,3.9 C16.5294118,3.405 16.1588235,3 15.7058824,3 L5.82352941,3 C5.37058824,3 5,3.405 5,3.9 L5,7.5 C5,7.995 5.37058824,8.4 5.82352941,8.4 L15.7058824,8.4 C16.1588235,8.4 16.5294118,7.995 16.5294118,7.5 L16.5294118,6.6 L17.3529412,6.6 L17.3529412,10.2 L9.11764706,10.2 L9.11764706,20.1 C9.11764706,20.595 9.48823529,21 9.94117647,21 L10.5882353,21 C11.0411765,21 11.4117647,20.595 11.4117647,20.1 L11.4117647,12 L19,12 L19,4.8 L16.5294118,4.8 Z"
+            id="Shape"
+            fill="#FFFFFF"
+            fill-rule="nonzero"
+          />
+        </G>
+      </G>
+    </G>
+  </svg>
+);
+
+export const DeleteIcon = () => (
+  <SVG
+    width="24px"
+    height="24px"
+    viewBox="0 0 24 24"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/SVG">
+    <G id="58" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <G
+        id="00-格式处理-素材列表"
+        transform="translate(-61.000000, -51.000000)">
+        <G
+          id="outline-format_paint-24px"
+          transform="translate(61.000000, 51.000000)">
+          <polygon id="Path" points="0 0 24 0 24 24 0 24" />
+          <G
+            id="iconfont_xiangpica"
+            transform="translate(3.000000, 5.000000)"
+            fill="#FFFFFF"
+            fill-rule="nonzero">
+            <path
+              d="M18,7.24576941 L10.6129703,0 L0,10.4098134 L4.96002951,15 L15.5842666,15 L15.5842666,13.6590622 L11.4616055,13.6590622 L18,7.24576941 Z M16.0719603,7.24576941 L10.8648649,12.3533133 L5.40567366,6.9986557 L10.6129703,1.89111181 L16.0719603,7.24576941 Z"
+              id="Shape"
+            />
+          </G>
+        </G>
+      </G>
+    </G>
+  </SVG>
+);
+
+export const Cursor = () => (
+  <svg width="33px" height="28px" viewBox="0 0 33 28" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+    <g id="58" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="00-格式处理-素材列表" transform="translate(-21.000000, -95.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+        <g id="光标" transform="translate(23.000000, 96.000000)">
+          <g id="geshishua-guangbiao" transform="translate(22.105263, 0.000000)" fill="#000000" stroke-width="0.5">
+            <path d="M3.91437654,2.25065813 C3.09241463,0.867770437 1.61333136,0.0222264498 0.0177580372,0.0230869151 L0.0177580372,1.33651359 C0.878964277,1.33651359 1.70489775,1.68245964 2.31386252,2.29824755 C2.92282729,2.91403546 3.26494013,3.74922309 3.26494012,4.6200787 L3.26494012,20.3811911 C3.26494013,21.2520467 2.92282729,22.0872344 2.31386252,22.7030223 C1.70489775,23.3188102 0.878964277,23.6647562 0.0177580372,23.6647562 L0.0177580372,24.9781829 C1.67122317,24.9781822 3.11946636,24.0850525 3.91437654,22.7506117 C4.73633845,24.1334994 6.21542173,24.9790434 7.81099506,24.9781829 L7.81099506,23.6647562 C6.94978882,23.6647562 6.12385535,23.3188102 5.51489058,22.7030223 C4.90592581,22.0872344 4.56381297,21.2520467 4.56381298,20.3811911 L4.56381298,4.6200787 C4.56381297,3.74922309 4.90592581,2.91403546 5.51489058,2.29824755 C6.12385535,1.68245964 6.94978882,1.33651359 7.81099506,1.33651359 L7.81099506,0.0230869151 C6.15752993,0.0230875722 4.70928674,0.916217274 3.91437654,2.25065813 L3.91437654,2.25065813 Z M6.51212221,11.8439219 L1.31663086,11.8439219 L1.31663086,13.1573479 L6.51212221,13.1573479 L6.51212221,11.8439219 Z" id="Shape"></path>
+          </g>
+          <path d="M15.0846556,3.125 L18.1496711,3.125 L18.1496711,14.0625 L8.73569494,14.0625 L8.73569494,23.828125 C8.73569494,24.8821203 7.95180969,25.78125 6.93277311,25.78125 L6.13003096,25.78125 C5.11099437,25.78125 4.32710913,24.8821203 4.32710913,23.828125 L4.32710913,10.15625 L14.5438274,10.15625 L14.5438274,8.81700385 C14.2221397,9.15999055 13.7800527,9.375 13.2817337,9.375 L1.02167183,9.375 C0.00263524164,9.375 -0.78125,8.47587027 -0.78125,7.421875 L-0.78125,2.734375 C-0.78125,1.68037973 0.00263524164,0.78125 1.02167183,0.78125 L13.2817337,0.78125 C14.3007703,0.78125 15.0846556,1.68037973 15.0846556,2.734375 L15.0846556,3.125 Z M2.78125,3.78125 L2.78125,6.21875 L11.21875,6.21875 L11.21875,3.78125 L2.78125,3.78125 Z" id="Shape" stroke-width="1.5625" fill="#333333"></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+)
