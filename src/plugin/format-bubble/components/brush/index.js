@@ -8,12 +8,12 @@ import { select } from '@wordpress/data';
 
 import { typePrefix } from '../../formats.js';
 import IconButton from '../icon-button/index.js';
-import { BrushIcon,Cursor } from '../icons/index.js';
+import { BrushIcon, Cursor } from '../icons/index.js';
 
 const formatType = 'brush';
 const type = `${typePrefix}/${formatType}`;
 const styleID = 'tss-brush-style';
-const cursorUrl = 'https://tsscdn.finxos.com/cloud/image/cursor-brush.svg'
+const cursorUrl = 'https://tsscdn.finxos.com/cloud/image/cursor-brush.svg';
 let storage = {
   active: false,
   onChange: null,
@@ -22,7 +22,9 @@ let storage = {
 };
 
 document.addEventListener('mouseup', function(e) {
-  if (e.target.getAttribute('contenteditable') !== 'true') {
+  const isContentitable = checkIsContentitable(e.target);
+
+  if (!isContentitable) {
     removeBrushFormat();
     removeBrushCursor();
     return;
@@ -47,17 +49,34 @@ const isBrush = () => {
   return storage.active;
 };
 
+const checkIsContentitable = (dom) => {
+  if (dom.getAttribute('contenteditable') == 'true') {
+    return true;
+  }
+
+  if (dom.tagName == 'BODY') {
+    return false;
+  }
+
+  if (dom.parentNode) {
+    return checkIsContentitable(dom.parentNode);
+  }
+};
+
 const setBrushFormat = (onChange, value, isAll) => {
   const formats = JSON.parse(JSON.stringify(storage.formats));
+  let handledValue = clearFormat(
+    isAll ? 0 : value.start,
+    isAll ? value.formats.length : value.end,
+    value
+  );
+
   removeBrushFormat();
   removeBrushCursor();
 
   if (isAll) {
     value.start = 0;
     value.end = value.formats.length;
-    let newFormats = [];
-    newFormats.length = value.formats.length;
-    value.formats = newFormats;
   }
 
   const brushformat = formats.reduce(
@@ -66,10 +85,19 @@ const setBrushFormat = (onChange, value, isAll) => {
         type: currentValue.type,
         attributes: currentValue.attributes
       }),
-    value
+    handledValue
   );
 
   onChange(brushformat);
+};
+
+const clearFormat = (start, end, value) => {
+  value.formats.forEach((format, key) => {
+    if (format && key < end && key >= start) {
+      delete value.formats[key];
+    }
+  });
+  return value;
 };
 
 const removeBrushFormat = () => {
@@ -136,10 +164,10 @@ class BrushRender extends React.Component {
     const styleTag = document.createElement('style');
     styleTag.setAttribute('id', styleID);
     styleTag.innerText = `[contenteditable]{
-        cursor:  url(${cursorUrl}) 2 2, copy !important;
+        cursor:  url(${cursorUrl}) , copy !important;
       }
       .edit-post-visual-editor .block-editor-writing-flow__click-redirect{
-        cursor:  url(${cursorUrl}) 2 2, copy !important;
+        cursor:  url(${cursorUrl}) , copy !important;
       }`;
 
     head.appendChild(styleTag);
