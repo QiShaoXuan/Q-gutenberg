@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+
+  <div id="plainText"></div>
+  <div id="html"></div>
+  </body>
+  <script>
+    const body = document.querySelector('body');
+
+    const html = document.querySelector('#html')
+    const plainText = document.querySelector('#plainText')
+    body.addEventListener('paste', function(e) {
+      console.log(e);
+      const clipboardData = event.clipboardData;
+      let { items, files } = clipboardData;
+      // console.log(items)
+      // console.log(files)
+      let plainText = clipboardData.getData( 'text/plain' );
+      let html = clipboardData.getData( 'text/html' );
+      let img = clipboardData.getData( 'image/png' );
+
+      
+
+      // var reader = new FileReader();
+      // reader.readAsDataURL(img[0].getAsFile());
+      // reader.onload=function(e){
+      //   const image = new Image()
+      //   image.src = this.result
+      //   document.body.appendChild(image)
+      // }
+
+      for (var i = 0; i < e.clipboardData.items.length; i++) {
+        if (e.clipboardData.items[i].type === 'image/png'){
+          var pasteFile = e.clipboardData.items[i].getAsFile();
+          var reader = new FileReader();
+          reader.readAsDataURL(pasteFile);
+          reader.onload=function(e){
+              const image = new Image()
+              image.src = this.result
+              document.body.appendChild(image)
+            // _this.base64 = this.result;
+          }
+        }
+      }
+
+    });
+  </script>
+</html>
